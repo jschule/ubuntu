@@ -1,13 +1,12 @@
- 
 d-i apt-setup/extras boolean true
 d-i apt-setup/restricted boolean true
 d-i apt-setup/universe boolean true
 d-i apt-setup/backports boolean false
 
-d-i apt-setup/local0/repository string https://dl.dropboxusercontent.com/u/29709539/jts_repo/ /
+d-i apt-setup/local0/repository string http://jschule.github.io/ubuntu/ /
 d-i apt-setup/local0/comment string JTS local repository
 d-i apt-setup/local0/source boolean false
-d-i apt-setup/local0/key string https://dl.dropboxusercontent.com/u/29709539/jts_repo/repo.key
+d-i apt-setup/local0/key string http://jschule.github.io/ubuntu/repo.key
 
 d-i clock-setup/ntp boolean true
 d-i clock-setup/utc boolean true

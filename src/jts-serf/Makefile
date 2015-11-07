@@ -1,0 +1,26 @@
+DPKG=dpkg
+DPKG_OPTS=-b
+.PHONY: info repo deb
+
+info: deb
+	dpkg-deb -I out/*.deb
+	dpkg-deb -c out/*.deb
+
+deb:	clean version_increment
+	mkdir -p out
+	cp -r src build
+	cp -r DEBIAN build
+	chmod -R g-w,o+rX build
+	sleep 3
+	fakeroot ${DPKG} ${DPKG_OPTS} build out
+	rm -Rf build
+	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,statically-linked-binary,unstripped-binary-or-object -i out/*.deb
+
+repo: deb
+	../putinrepo.sh out/*.deb
+
+clean:
+	rm -fr out build
+
+version_increment:
+	V=$$(sed -ne '/Version/s/.* //p' DEBIAN/control ) ; sed -i -e "/Version/s/$$V/$$((++V))/" DEBIAN/control

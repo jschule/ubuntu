@@ -1,0 +1,6 @@
+[Completely disable suspend and hibernate]
+Identity=unix-user:*
+Action=org.freedesktop.upower.suspend;org.freedesktop.upower.hibernate;org.freedesktop.login1.suspend*;org.freedesktop.login1.hibernate*
+ResultAny=no
+ResultInactive=no
+ResultActive=no

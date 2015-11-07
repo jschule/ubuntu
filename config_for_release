@@ -1,0 +1,6 @@
+APT::FTPArchive::Release::Origin "JTS EDV";
+APT::FTPArchive::Release::Label "JTS Stable";
+APT::FTPArchive::Release::Architectures "amd64 armhf armel i386";
+APT::FTPArchive::Release::Description "Private JTS Packages";
+
+

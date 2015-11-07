@@ -1,0 +1,88 @@
+ 
+d-i apt-setup/extras boolean true
+d-i apt-setup/restricted boolean true
+d-i apt-setup/universe boolean true
+d-i apt-setup/backports boolean false
+
+d-i apt-setup/local0/repository string https://dl.dropboxusercontent.com/u/29709539/jts_repo/ /
+d-i apt-setup/local0/comment string JTS local repository
+d-i apt-setup/local0/source boolean false
+d-i apt-setup/local0/key string https://dl.dropboxusercontent.com/u/29709539/jts_repo/repo.key
+
+d-i clock-setup/ntp boolean true
+d-i clock-setup/utc boolean true
+
+d-i console-setup/ask_detect false
+
+d-i debian-installer/missing-provide select  ${DEFAULT}
+d-i debian-installer/locale string de_DE.UTF-8
+
+d-i finish-install/reboot_in_progress note
+d-i debian-installer/exit/halt boolean false
+
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/with_other_os boolean true
+
+d-i hw-detect/load_firmware boolean true
+
+d-i keyboard-configuration/layoutcode string de
+d-i keyboard-configuration/layout select German
+d-i keyboard-configuration/modelcode string pc105
+
+d-i preseed/early_command string rmmod usb_storage
+
+d-i preseed/include_command string\
+    if wget --spider --timeout 1 --tries 1 http://192.168.11.6:3142/acng-doc/ ; \
+    then echo "pohlstrasse-mirror.txt"; \
+    else echo "de-mirror.txt"; fi
+
+d-i mirror/http/proxy string
+
+d-i netcfg/get_domain string jts
+d-i netcfg/get_hostname string kaputt
+d-i netcfg/hostname string ohne
+d-i netcfg/wireless_wep string
+
+d-i partman/early_command string rmmod usb_storage
+d-i partman-auto/choose_recipe select atomic
+d-i partman-auto/method string regular
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+d-i partman/unmount_active boolean true
+d-i partman-lvm/confirm boolean true
+d-i partman-lvm/device_remove_lvm boolean true
+d-i partman-md/device_remove_md boolean true
+d-i partman-partitioning/confirm_write_new_label boolean true
+
+d-i passwd/user-fullname string EDV Admin
+d-i passwd/username string edv
+d-i passwd/user-password-crypted password $6$8w9OZMtq$tz12iVyUCSwBfmTdtJqR2SEIJwrdq8gkNrsOeY.WzkHG4TkW.067Uzx2hIVNl2noPXA/uQB/87CR8LmnimgJF1
+
+d-i pkgsel/ignore-incomplete-language-support boolean false
+d-i pkgsel/install-language-support boolean true
+d-i pkgsel/language-packs multiselect de, en, he
+d-i pkgsel/update-policy select none
+d-i pkgsel/upgrade select full-upgrade
+
+d-i time/zone select Europe/Berlin
+
+d-i user-setup/allow-password-weak boolean true
+d-i user-setup/encrypt-home boolean false
+
+tasksel tasksel/first multiselect ubuntu-desktop
+
+d-i preseed/late_command string \
+    { tr -cd A-Za-z0-9 </sys/devices/virtual/dmi/id/chassis_asset_tag | grep . || echo jts ; } > /target/etc/hostname ; \
+    in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms; \
+    in-target wget -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ; \
+    in-target dpkg -i /tmp/chrome.deb ; \
+    in-target apt-get --yes update ; \
+    in-target apt-get --yes install --fix-broken ; \
+    in-target apt-get --yes install jts-base ; \
+    in-target sleep 1
+
+
+
+ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true
+ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note

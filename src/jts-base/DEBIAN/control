@@ -1,0 +1,10 @@
+Package: jts-base
+Version: 9
+Priority: optional
+Section: misc
+Architecture: all
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-guest-customization, jts-fonts, jts-serf
+Description: JTS Basispaket
+ Hintergrundbild
+

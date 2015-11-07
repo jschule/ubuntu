@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x -e
+
+systemctl daemon-reload || true
+deb-systemd-helper enable serf.service || true
+deb-systemd-invoke try-restart serf.service || true

@@ -1,0 +1,6 @@
+{
+	"event_handlers": [
+		"user:upgrade=upgrade </dev/null >/var/log/serf-upgrade.log 2>&1 &",
+		"query:upgrade-status=tail -n 1 /var/log/serf-upgrade.log"
+	]
+}

@@ -1,0 +1,2 @@
+d-i mirror/http/mirror select de.archive.ubuntu.com
+

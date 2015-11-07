@@ -1,0 +1,18 @@
+[Allow harmless stuff]
+Identity=unix-user:guest-*
+Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;com.canonical.indicator.sound.AccountsService.ModifyOwnUser;org.freedesktop.accounts.change-own-user-data
+ResultActive=yes
+
+[Allow handling removable media]
+Identity=unix-user:guest-*
+Action=org.freedesktop.udisks2.filesystem-mount;org.freedesktop.udisks2.eject-media;org.freedesktop.udisks2.ata-standby;org.freedesktop.udisks2.power-off-drive;org.freedesktop.udisks2.modify-device;org.freedesktop.udisks2.cancel-job;org.freedesktop.udisks2.rescan;org.freedesktop.udisks2.encrypted-unlock;org.freedesktop.udisks2.encrypted-change-passphrase
+ResultActive=yes
+
+[Disallow any privileged actions]
+Identity=unix-user:guest-*
+Action=*
+ResultActive=auth_admin
+ResultInactive=no
+ResultsAny=no
+
+

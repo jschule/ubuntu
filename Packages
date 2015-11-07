@@ -1,0 +1,130 @@
+Package: jts-fonts
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 103
+Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
+Filename: ./src/jts-fonts/out/jts-fonts_103_all.deb
+Size: 2899838
+MD5sum: 5918588b1af9b9272b788843bb5a4201
+SHA1: eb85aeb04673bb81c1fa99addf5056d59756c3bb
+SHA256: b11b883a17c1d6fd1857131c10f2a0bac773983444447ad3ce08e92b98b1dc29
+SHA512: bda5eca010e481be34e0c77bab61888b09b12868a04c6122172e32fcf8f5166f02910c44faf648f34406bfc9d2215fa4b7cf40435c1fd8985535904293830e0c
+Description: TTF Collection
+ Opensiddur
+ Libertine
+
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 9
+Depends: jts-guest-customization, jts-fonts, jts-serf
+Filename: ./src/jts-base/out/jts-base_9_all.deb
+Size: 999550
+MD5sum: 9b0956b7d1b66df03e4ea3b648c7f41e
+SHA1: 23a33078a173452a4e7712870e3cbe5ff671c686
+SHA256: 83c13779fef438c7a0af6cde199e44a6c94613b27ab0b5578b68078d1a35e187
+SHA512: 5fa5340fd4ece42fbef70fb8b85ae8fa1061c46a15fd95348088cf563a40f95e5d0bb418c773bb2a91aef5cbe68723ddcfa653b180aa7b32bf4b1b55679dde7d
+Description: JTS Basispaket
+ Hintergrundbild
+
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 23
+Filename: ./src/jts-serf/out/jts-serf_23_amd64.deb
+Size: 2358724
+MD5sum: ac4055f3b94151c7e68f7713ad6dd365
+SHA1: 657ff34eea6ed03aee1472857ffaf05901ae7051
+SHA256: efaf22aaee0e0a123384f51df79f8fb558258e572d7decaa1c6220809e1fc3fd
+SHA512: ebda25fac316ab8f776aedd7bade983be512fe8a6bf187ea6c75c3f1af3671930381b641678459d5b4d30984fd876a050e88d5643a9c20369d3ebe4931a243ed
+Description: JTS Klassenfernsteuerung mit serf
+ serf
+ scripts
+
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 6
+Filename: ./src/jts-guest-customization/out/jts-guest-customization_6_all.deb
+Size: 2378
+MD5sum: b5f2010bacbc6465e50bc47c5d5143ff
+SHA1: 235d35898545f7a341f9b82ba122865c28c23b3f
+SHA256: c040fbf8e4f83b9162412334d3502b56a2f27ff0f0d0722189e932c57a9c742f
+SHA512: 1504fdada6d17c2ebd272a5ca7f11caa205d54ce3fe7c02d6d478fb1ae755f30e308bd32343579e7dab00fa7fc38aefca2495e351afc2c42aa0bb3c0349fbb2c
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
+Package: jts-fonts
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 103
+Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
+Filename: ./deb/jts-fonts_103_all.deb
+Size: 2899838
+MD5sum: 5918588b1af9b9272b788843bb5a4201
+SHA1: eb85aeb04673bb81c1fa99addf5056d59756c3bb
+SHA256: b11b883a17c1d6fd1857131c10f2a0bac773983444447ad3ce08e92b98b1dc29
+SHA512: bda5eca010e481be34e0c77bab61888b09b12868a04c6122172e32fcf8f5166f02910c44faf648f34406bfc9d2215fa4b7cf40435c1fd8985535904293830e0c
+Description: TTF Collection
+ Opensiddur
+ Libertine
+
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 6
+Filename: ./deb/jts-guest-customization_6_all.deb
+Size: 2378
+MD5sum: b5f2010bacbc6465e50bc47c5d5143ff
+SHA1: 235d35898545f7a341f9b82ba122865c28c23b3f
+SHA256: c040fbf8e4f83b9162412334d3502b56a2f27ff0f0d0722189e932c57a9c742f
+SHA512: 1504fdada6d17c2ebd272a5ca7f11caa205d54ce3fe7c02d6d478fb1ae755f30e308bd32343579e7dab00fa7fc38aefca2495e351afc2c42aa0bb3c0349fbb2c
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 9
+Depends: jts-guest-customization, jts-fonts, jts-serf
+Filename: ./deb/jts-base_9_all.deb
+Size: 999550
+MD5sum: 9b0956b7d1b66df03e4ea3b648c7f41e
+SHA1: 23a33078a173452a4e7712870e3cbe5ff671c686
+SHA256: 83c13779fef438c7a0af6cde199e44a6c94613b27ab0b5578b68078d1a35e187
+SHA512: 5fa5340fd4ece42fbef70fb8b85ae8fa1061c46a15fd95348088cf563a40f95e5d0bb418c773bb2a91aef5cbe68723ddcfa653b180aa7b32bf4b1b55679dde7d
+Description: JTS Basispaket
+ Hintergrundbild
+
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 23
+Filename: ./deb/jts-serf_23_amd64.deb
+Size: 2358724
+MD5sum: ac4055f3b94151c7e68f7713ad6dd365
+SHA1: 657ff34eea6ed03aee1472857ffaf05901ae7051
+SHA256: efaf22aaee0e0a123384f51df79f8fb558258e572d7decaa1c6220809e1fc3fd
+SHA512: ebda25fac316ab8f776aedd7bade983be512fe8a6bf187ea6c75c3f1af3671930381b641678459d5b4d30984fd876a050e88d5643a9c20369d3ebe4931a243ed
+Description: JTS Klassenfernsteuerung mit serf
+ serf
+ scripts
+

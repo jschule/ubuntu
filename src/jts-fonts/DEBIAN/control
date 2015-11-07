@@ -1,0 +1,10 @@
+Package: jts-fonts
+Version: 103
+Priority: optional
+Section: misc
+Architecture: all
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
+Description: TTF Collection
+ Opensiddur
+ Libertine

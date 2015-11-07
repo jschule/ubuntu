@@ -1,0 +1,9 @@
+Package: jts-guest-customization
+Version: 6
+Priority: optional
+Section: misc
+Architecture: all
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen

@@ -15,19 +15,38 @@ Description: TTF Collection
  Opensiddur
  Libertine
 
+Package: jts-hostname
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 8
+Filename: ./src/jts-hostname/out/jts-hostname_8_amd64.deb
+Size: 1010
+MD5sum: fc33c03f441b54c6bba65f7b80f96e61
+SHA1: 879d378fb7a0c9a30ae5cd4fb8334b5d6df0eb39
+SHA256: b4cc5232c016e4a5e0040ac3b89b92ab97d700847bc82d5293682dd4714e3085
+SHA512: b55ea8688e4d7f522121268a7670efc52d4827f0a875aa4284954d8f0f4643a373b60122c0747a4d1154e02ce6915d2427df3e2295219e49b43a6b8c04ef67d3
+Description: JTS automatic hostname configuration
+ Read hostname from BIOS asset tag
+ TODO:
+ * Read hostname from online inventory
+ .
+ empty package
+
 Package: jts-base
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 9
-Depends: jts-guest-customization, jts-fonts, jts-serf
-Filename: ./src/jts-base/out/jts-base_9_all.deb
-Size: 999550
-MD5sum: 9b0956b7d1b66df03e4ea3b648c7f41e
-SHA1: 23a33078a173452a4e7712870e3cbe5ff671c686
-SHA256: 83c13779fef438c7a0af6cde199e44a6c94613b27ab0b5578b68078d1a35e187
-SHA512: 5fa5340fd4ece42fbef70fb8b85ae8fa1061c46a15fd95348088cf563a40f95e5d0bb418c773bb2a91aef5cbe68723ddcfa653b180aa7b32bf4b1b55679dde7d
+Version: 10
+Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
+Filename: ./src/jts-base/out/jts-base_10_all.deb
+Size: 999560
+MD5sum: a799a7f06094cbd1ece04264b8c1e16e
+SHA1: 26b76dbbfd5aefc853a95193bf882d819f4ea9ec
+SHA256: ed37e81d8036b131a26a8bf6b10d8a687db8858b8ad928c9cd8b65eba817572d
+SHA512: 40f92bedca7e9fd12ef12eb6a171cd7be60c2b3345d302ec06cfe21942af197f85b40dd39472a9b94a78f51cccbb52402e2e02037564049372656b5df5749b46
 Description: JTS Basispaket
  Hintergrundbild
 
@@ -80,6 +99,41 @@ Description: TTF Collection
  Opensiddur
  Libertine
 
+Package: jts-hostname
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 8
+Filename: ./deb/jts-hostname_8_amd64.deb
+Size: 1010
+MD5sum: fc33c03f441b54c6bba65f7b80f96e61
+SHA1: 879d378fb7a0c9a30ae5cd4fb8334b5d6df0eb39
+SHA256: b4cc5232c016e4a5e0040ac3b89b92ab97d700847bc82d5293682dd4714e3085
+SHA512: b55ea8688e4d7f522121268a7670efc52d4827f0a875aa4284954d8f0f4643a373b60122c0747a4d1154e02ce6915d2427df3e2295219e49b43a6b8c04ef67d3
+Description: JTS automatic hostname configuration
+ Read hostname from BIOS asset tag
+ TODO:
+ * Read hostname from online inventory
+ .
+ empty package
+
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 10
+Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
+Filename: ./deb/jts-base_10_all.deb
+Size: 999560
+MD5sum: a799a7f06094cbd1ece04264b8c1e16e
+SHA1: 26b76dbbfd5aefc853a95193bf882d819f4ea9ec
+SHA256: ed37e81d8036b131a26a8bf6b10d8a687db8858b8ad928c9cd8b65eba817572d
+SHA512: 40f92bedca7e9fd12ef12eb6a171cd7be60c2b3345d302ec06cfe21942af197f85b40dd39472a9b94a78f51cccbb52402e2e02037564049372656b5df5749b46
+Description: JTS Basispaket
+ Hintergrundbild
+
 Package: jts-guest-customization
 Priority: optional
 Section: misc
@@ -95,22 +149,6 @@ SHA512: 1504fdada6d17c2ebd272a5ca7f11caa205d54ce3fe7c02d6d478fb1ae755f30e308bd32
 Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
-
-Package: jts-base
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 9
-Depends: jts-guest-customization, jts-fonts, jts-serf
-Filename: ./deb/jts-base_9_all.deb
-Size: 999550
-MD5sum: 9b0956b7d1b66df03e4ea3b648c7f41e
-SHA1: 23a33078a173452a4e7712870e3cbe5ff671c686
-SHA256: 83c13779fef438c7a0af6cde199e44a6c94613b27ab0b5578b68078d1a35e187
-SHA512: 5fa5340fd4ece42fbef70fb8b85ae8fa1061c46a15fd95348088cf563a40f95e5d0bb418c773bb2a91aef5cbe68723ddcfa653b180aa7b32bf4b1b55679dde7d
-Description: JTS Basispaket
- Hintergrundbild
 
 Package: jts-serf
 Priority: optional

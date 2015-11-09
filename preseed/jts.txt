@@ -16,7 +16,7 @@ d-i console-setup/ask_detect false
 d-i debian-installer/missing-provide select  ${DEFAULT}
 d-i debian-installer/locale string de_DE.UTF-8
 
-d-i finish-install/reboot_in_progress note
+###d-i finish-install/reboot_in_progress note
 d-i debian-installer/exit/halt boolean false
 
 d-i grub-installer/only_debian boolean true

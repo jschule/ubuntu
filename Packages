@@ -20,13 +20,13 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: amd64
-Version: 8
-Filename: ./src/jts-hostname/out/jts-hostname_8_amd64.deb
-Size: 1010
-MD5sum: fc33c03f441b54c6bba65f7b80f96e61
-SHA1: 879d378fb7a0c9a30ae5cd4fb8334b5d6df0eb39
-SHA256: b4cc5232c016e4a5e0040ac3b89b92ab97d700847bc82d5293682dd4714e3085
-SHA512: b55ea8688e4d7f522121268a7670efc52d4827f0a875aa4284954d8f0f4643a373b60122c0747a4d1154e02ce6915d2427df3e2295219e49b43a6b8c04ef67d3
+Version: 9
+Filename: ./src/jts-hostname/out/jts-hostname_9_amd64.deb
+Size: 1090
+MD5sum: 0f0b2f2fafe94ea525d0ef8facdf0833
+SHA1: be114b598d8aad2654022c3d5c8f573080f07be9
+SHA256: 2566f792a8256ed339f74d0979c0c1cee639860f1fc4b2a8235774766ed540d9
+SHA512: 41342405de296a225948b89001176b1846cfa3c0d78cc21739e38d51bd4c6e7efb6e928e0166bab97b9be03eb55f252e6ae0d001da656932dc2c62e7bc1bdd96
 Description: JTS automatic hostname configuration
  Read hostname from BIOS asset tag
  TODO:
@@ -99,25 +99,6 @@ Description: TTF Collection
  Opensiddur
  Libertine
 
-Package: jts-hostname
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 8
-Filename: ./deb/jts-hostname_8_amd64.deb
-Size: 1010
-MD5sum: fc33c03f441b54c6bba65f7b80f96e61
-SHA1: 879d378fb7a0c9a30ae5cd4fb8334b5d6df0eb39
-SHA256: b4cc5232c016e4a5e0040ac3b89b92ab97d700847bc82d5293682dd4714e3085
-SHA512: b55ea8688e4d7f522121268a7670efc52d4827f0a875aa4284954d8f0f4643a373b60122c0747a4d1154e02ce6915d2427df3e2295219e49b43a6b8c04ef67d3
-Description: JTS automatic hostname configuration
- Read hostname from BIOS asset tag
- TODO:
- * Read hostname from online inventory
- .
- empty package
-
 Package: jts-base
 Priority: optional
 Section: misc
@@ -165,4 +146,23 @@ SHA512: ebda25fac316ab8f776aedd7bade983be512fe8a6bf187ea6c75c3f1af3671930381b641
 Description: JTS Klassenfernsteuerung mit serf
  serf
  scripts
+
+Package: jts-hostname
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 9
+Filename: ./deb/jts-hostname_9_amd64.deb
+Size: 1090
+MD5sum: 0f0b2f2fafe94ea525d0ef8facdf0833
+SHA1: be114b598d8aad2654022c3d5c8f573080f07be9
+SHA256: 2566f792a8256ed339f74d0979c0c1cee639860f1fc4b2a8235774766ed540d9
+SHA512: 41342405de296a225948b89001176b1846cfa3c0d78cc21739e38d51bd4c6e7efb6e928e0166bab97b9be03eb55f252e6ae0d001da656932dc2c62e7bc1bdd96
+Description: JTS automatic hostname configuration
+ Read hostname from BIOS asset tag
+ TODO:
+ * Read hostname from online inventory
+ .
+ empty package
 

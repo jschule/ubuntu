@@ -75,7 +75,7 @@ tasksel tasksel/first multiselect ubuntu-desktop
 d-i preseed/late_command string \
     { tr -cd A-Za-z0-9 </sys/devices/virtual/dmi/id/chassis_asset_tag | grep . || echo jts ; } > /target/etc/hostname ; \
     in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms; \
-    in-target wget -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ; \
+    in-target wget -O /tmp/chrome.deb --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ; \
     in-target dpkg -i /tmp/chrome.deb ; \
     in-target apt-get --yes update ; \
     in-target apt-get --yes install --fix-broken ; \

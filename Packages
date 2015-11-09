@@ -39,14 +39,14 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 10
+Version: 11
 Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
-Filename: ./src/jts-base/out/jts-base_10_all.deb
-Size: 999560
-MD5sum: a799a7f06094cbd1ece04264b8c1e16e
-SHA1: 26b76dbbfd5aefc853a95193bf882d819f4ea9ec
-SHA256: ed37e81d8036b131a26a8bf6b10d8a687db8858b8ad928c9cd8b65eba817572d
-SHA512: 40f92bedca7e9fd12ef12eb6a171cd7be60c2b3345d302ec06cfe21942af197f85b40dd39472a9b94a78f51cccbb52402e2e02037564049372656b5df5749b46
+Filename: ./src/jts-base/out/jts-base_11_all.deb
+Size: 999556
+MD5sum: 45a3e4934db739f324ec13e10ccabf0f
+SHA1: 997adeb2402f369905b641777d45b0e9d930224b
+SHA256: 2ca2b42c78afeae4a0231cc4a367c8f5d77da44b2d5b1017f51ddfe02a2a6ce9
+SHA512: 07ad74155afb20ac9266f272e588774e61e5631e51d64e295836c8fad7c38e08dae76b02c6a30a551c8802842ca24ce79c13c3b6b09ba9695d1d3909824fd0d0
 Description: JTS Basispaket
  Hintergrundbild
 
@@ -123,14 +123,14 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 10
+Version: 11
 Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
-Filename: ./deb/jts-base_10_all.deb
-Size: 999560
-MD5sum: a799a7f06094cbd1ece04264b8c1e16e
-SHA1: 26b76dbbfd5aefc853a95193bf882d819f4ea9ec
-SHA256: ed37e81d8036b131a26a8bf6b10d8a687db8858b8ad928c9cd8b65eba817572d
-SHA512: 40f92bedca7e9fd12ef12eb6a171cd7be60c2b3345d302ec06cfe21942af197f85b40dd39472a9b94a78f51cccbb52402e2e02037564049372656b5df5749b46
+Filename: ./deb/jts-base_11_all.deb
+Size: 999556
+MD5sum: 45a3e4934db739f324ec13e10ccabf0f
+SHA1: 997adeb2402f369905b641777d45b0e9d930224b
+SHA256: 2ca2b42c78afeae4a0231cc4a367c8f5d77da44b2d5b1017f51ddfe02a2a6ce9
+SHA512: 07ad74155afb20ac9266f272e588774e61e5631e51d64e295836c8fad7c38e08dae76b02c6a30a551c8802842ca24ce79c13c3b6b09ba9695d1d3909824fd0d0
 Description: JTS Basispaket
  Hintergrundbild
 

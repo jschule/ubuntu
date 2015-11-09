@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+H=$(tr -cd A-Za-z0-9 </sys/devices/virtual/dmi/id/chassis_asset_tag | grep . || echo jts )
+
+logger -s "Setting hostname to $H"
+
+echo "$H" > /etc/hostname
+sed -i -f - /etc/hosts <<EOF
+1{
+i # this content comes from the ${DPKG_MAINTSCRIPT_PACKAGE}=$2 package
+i 127.0.1.1 $H
+i # end of content from the ${DPKG_MAINTSCRIPT_PACKAGE}=$2 package
+}
+/127\.0\.1\.1/d
+/${DPKG_MAINTSCRIPT_PACKAGE}.*package/d
+EOF

@@ -8,7 +8,7 @@ info: deb
 
 deb:	clean version_increment
 	mkdir -p out
-	cp -r src build
+	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
 	chmod -R g-w,o+rX build
 	fakeroot ${DPKG} ${DPKG_OPTS} build out

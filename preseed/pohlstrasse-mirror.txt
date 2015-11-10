@@ -1,4 +1,1 @@
-d-i mirror/country string manual
-d-i mirror/http/hostname string 192.168.11.6:3142
-d-i mirror/http/directory string /ubuntu
-
+d-i mirror/http/proxy string http://192.168.11.6:3142/

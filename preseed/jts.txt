@@ -3,7 +3,7 @@ d-i apt-setup/restricted boolean true
 d-i apt-setup/universe boolean true
 d-i apt-setup/backports boolean false
 
-d-i apt-setup/local0/repository string http://jschule.github.io/ubuntu/ /
+d-i apt-setup/local0/repository string deb http://jschule.github.io/ubuntu/ /
 d-i apt-setup/local0/comment string JTS local repository
 d-i apt-setup/local0/source boolean false
 d-i apt-setup/local0/key string http://jschule.github.io/ubuntu/repo.key
@@ -16,7 +16,7 @@ d-i console-setup/ask_detect false
 d-i debian-installer/missing-provide select  ${DEFAULT}
 d-i debian-installer/locale string de_DE.UTF-8
 
-###d-i finish-install/reboot_in_progress note
+d-i finish-install/reboot_in_progress note
 d-i debian-installer/exit/halt boolean false
 
 d-i grub-installer/only_debian boolean true
@@ -32,10 +32,7 @@ d-i preseed/early_command string rmmod usb_storage
 
 d-i preseed/include_command string\
     if wget --spider --timeout 1 --tries 1 http://192.168.11.6:3142/acng-doc/ ; \
-    then echo "pohlstrasse-mirror.txt"; \
-    else echo "de-mirror.txt"; fi
-
-d-i mirror/http/proxy string
+    then echo "pohlstrasse-mirror.txt"
 
 d-i netcfg/get_domain string jts
 d-i netcfg/get_hostname string kaputt

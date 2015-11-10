@@ -63,7 +63,7 @@ d-i pkgsel/ignore-incomplete-language-support boolean false
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-packs multiselect de, en, he
 d-i pkgsel/update-policy select none
-####d-i pkgsel/upgrade select full-upgrade
+d-i pkgsel/upgrade select full-upgrade
 
 d-i time/zone select Europe/Berlin
 

@@ -6,7 +6,7 @@ info: deb
 	dpkg-deb -I out/*.deb
 	dpkg-deb -c out/*.deb
 
-deb:	clean version_increment
+deb:	clean check_status version_increment
 	mkdir -p out
 	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
@@ -26,3 +26,6 @@ clean:
 
 version_increment:
 	V=$$(sed -ne '/Version/s/.* //p' DEBIAN/control ) ; sed -i -e "/Version/s/$$V/$$((++V))/" DEBIAN/control
+
+check_status:
+	@git diff-index --quiet HEAD -- || { echo ; git status -s ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; }

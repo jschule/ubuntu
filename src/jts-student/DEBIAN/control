@@ -5,6 +5,6 @@ Section: misc
 Architecture: amd64
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Conflicts: jts-teacher
-Depends: jts-guest-customization
+Depends: jts-base, jts-guest-customization
 Description: JTS student package
  Mark system as a student system

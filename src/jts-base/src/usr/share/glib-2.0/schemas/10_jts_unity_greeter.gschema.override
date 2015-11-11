@@ -1,4 +1,0 @@
-[com.canonical.unity-greeter]
-background='/usr/share/backgrounds/jts-schulhaus.jpg'
-hidden-users=[ 'edv' ]
-high-contrast=true

@@ -13,13 +13,10 @@ deb:	clean check_status version_increment
 	chmod -R g-w,o+rX build
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
-	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile -i out/*.deb
+	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary -i out/*.deb
 
 repo: deb
 	../putinrepo.sh out/*.deb
-
-install: repo
-	sudo /etc/cron.daily/gss-autoupdate
 
 clean:
 	rm -fr out build

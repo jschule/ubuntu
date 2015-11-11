@@ -1,20 +1,3 @@
-Package: jts-student
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 32
-Depends: jts-guest-customization
-Conflicts: jts-teacher
-Filename: deb/jts-student_32_amd64.deb
-Size: 816
-MD5sum: f3067d0c9dcceef32703d2ffa46d77a4
-SHA1: 7ed7de6cb6f3f9f6480c1a99a5516be7acbae60c
-SHA256: 41afe7e14a662a6eb65898b72e0d21ae64854df0b7c7fee243f0a5a09e7825fc
-SHA512: 0d2178149290d2b7bc068905018b293c310120f1b3b3cac306a29e06647947efdc97956a7bfefecfbc535dcce5af85c0fb7cfa0eba2dc45ae6a8c1bbaf2d58f6
-Description: JTS student package
- Mark system as a student system
-
 Package: jts-base
 Priority: optional
 Section: misc
@@ -30,6 +13,23 @@ SHA256: 6065e8ba9e21705ed4f6f4f82c0ac83c1c519d129d36943c04a102db1a9605e3
 SHA512: a6ed7157e606304c8064ae70275cf92a942f973ec0793a63066aca3c8b4fc4d997833537153ccaf70cd78bd09b4b8214f8fe44236dbd3197dc05ee2a19b343ec
 Description: JTS Basispaket
  Hintergrundbild
+
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 37
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_37_amd64.deb
+Size: 822
+MD5sum: bb0a0ff9dff412bab36bef0d98639d74
+SHA1: 60b6437dc77a16a03584f54dc86044d1c58ccf50
+SHA256: a459a2fc25f8c0982f057cb45307fb95463adf88d1562d263b6539f8814bad99
+SHA512: c7fb328fb7c4bdf125eeeb47218406c34132befaa345419b38b23a91534f8cec219881d5094985cc1af56b1d990ba79972c71e7fd85e22de0d58e15728716e83
+Description: JTS student package
+ Mark system as a student system
 
 Package: jts-serf
 Priority: optional

@@ -77,4 +77,7 @@ apt-ftparchive packages . | tee Packages | bzip2 >Packages.bz2
 apt-ftparchive -c config_for_release release . | grep -v " Release" >Release
 gpg --verbose --output Release.gpg --batch --yes -ba Release
 
+git add -A Packages Packages.bz2 Release Release.gpg deb
+git commit -m "putinrepo"
+git push
 # vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4

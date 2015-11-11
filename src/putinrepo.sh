@@ -73,7 +73,7 @@ if [[ "${1:-}" ]] ; then
 fi
  
 cd "$REPO_BASE_DIR"
-apt-ftparchive packages . | tee Packages | bzip2 >Packages.bz2
+apt-ftparchive packages deb | tee Packages | bzip2 >Packages.bz2
 apt-ftparchive -c config_for_release release . | grep -v " Release" >Release
 gpg --verbose --output Release.gpg --batch --yes -ba Release
 

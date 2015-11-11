@@ -57,6 +57,7 @@ d-i passwd/username string edv
 d-i passwd/user-password-crypted password $6$8w9OZMtq$tz12iVyUCSwBfmTdtJqR2SEIJwrdq8gkNrsOeY.WzkHG4TkW.067Uzx2hIVNl2noPXA/uQB/87CR8LmnimgJF1
 
 d-i pkgsel/ignore-incomplete-language-support boolean false
+d-i pkgsel/include string d-i pkgsel/include string jts-base jts-student
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-packs multiselect de, en, he
 d-i pkgsel/update-policy select none
@@ -72,12 +73,7 @@ tasksel tasksel/first multiselect ubuntu-desktop
 d-i preseed/late_command string \
     in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms; \
     in-target wget -O /tmp/chrome.deb --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ; \
-    in-target dpkg -i /tmp/chrome.deb ; \
-    in-target apt-get --yes update ; \
-    in-target apt-get --yes install --fix-broken ; \
-    in-target apt-get --yes install jts-base ; \
-    in-target sleep 1
-
+    in-target dpkg -i /tmp/chrome.deb
 
 
 ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true

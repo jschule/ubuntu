@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ -z "$PAM_TYPE" || -z "$PAM_USER" ]] ; then
+    echo 1>&2 "ERROR: Need PAM_TYPE and PAM_USER environment vars"
+    exit 1;
+fi
+
+case "$PAM_TYPE" in
+    (open_session) serf tags -set user=$PAM_USER ;;
+    (close_session) serf tags -delete user ;;
+esac

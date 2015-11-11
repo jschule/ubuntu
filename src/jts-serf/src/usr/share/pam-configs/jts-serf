@@ -1,0 +1,7 @@
+Name: Set serf tag with currently logged in user
+Default: yes
+Priority: 0
+Session-Interactive-Only: yes
+Session-Type: Additional
+Session:
+    optional    pam_exec.so /usr/sbin/pam_serf

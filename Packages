@@ -82,6 +82,40 @@ Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
 
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 32
+Depends: jts-guest-customization
+Conflicts: jts-teacher
+Filename: ./src/jts-student/out/jts-student_32_amd64.deb
+Size: 816
+MD5sum: f3067d0c9dcceef32703d2ffa46d77a4
+SHA1: 7ed7de6cb6f3f9f6480c1a99a5516be7acbae60c
+SHA256: 41afe7e14a662a6eb65898b72e0d21ae64854df0b7c7fee243f0a5a09e7825fc
+SHA512: 0d2178149290d2b7bc068905018b293c310120f1b3b3cac306a29e06647947efdc97956a7bfefecfbc535dcce5af85c0fb7cfa0eba2dc45ae6a8c1bbaf2d58f6
+Description: JTS student package
+ Mark system as a student system
+
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 32
+Depends: jts-guest-customization
+Conflicts: jts-teacher
+Filename: ./deb/jts-student_32_amd64.deb
+Size: 816
+MD5sum: f3067d0c9dcceef32703d2ffa46d77a4
+SHA1: 7ed7de6cb6f3f9f6480c1a99a5516be7acbae60c
+SHA256: 41afe7e14a662a6eb65898b72e0d21ae64854df0b7c7fee243f0a5a09e7825fc
+SHA512: 0d2178149290d2b7bc068905018b293c310120f1b3b3cac306a29e06647947efdc97956a7bfefecfbc535dcce5af85c0fb7cfa0eba2dc45ae6a8c1bbaf2d58f6
+Description: JTS student package
+ Mark system as a student system
+
 Package: jts-base
 Priority: optional
 Section: misc

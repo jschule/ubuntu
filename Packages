@@ -71,13 +71,13 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 7
-Filename: ./src/jts-guest-customization/out/jts-guest-customization_7_all.deb
-Size: 2378
-MD5sum: 01ca87f72d4d3fad433a8924a7ac8d9a
-SHA1: 7f5c93c15327ab1ea23dc49d23767a9118ab9830
-SHA256: ed2b75008c65dbb55ac2c1becd3fcb900cc1a1f24c82a4e6ed1e2529b0eb8879
-SHA512: 6442fc2b5501e95174a1db4a894d00aaba896cd5d1cb439e98f204dc43bcf8d2b90f21c8f9605b251df39ada56a1aeb72c202aa4bdbdf92803d7fb5c9c220cfa
+Version: 30
+Filename: ./src/jts-guest-customization/out/jts-guest-customization_30_all.deb
+Size: 2240
+MD5sum: 8b2bb03ba47533bee390768afe087372
+SHA1: bbf15b8ab61da68a42d5a04385ef414d7454352e
+SHA256: d854d7ccd72e37e83b849d4eee1d7d7054f63fe71b8dad539ddeab8fa708e192
+SHA512: fb9285ddb1270188db49bf72b799e2d580601c0d5be290f9854c0d69a1dd43762b09881982c92075d16800b22181a58223d45ae48753a683b576d4a673c52e87
 Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
@@ -98,6 +98,22 @@ SHA512: a6ed7157e606304c8064ae70275cf92a942f973ec0793a63066aca3c8b4fc4d997833537
 Description: JTS Basispaket
  Hintergrundbild
 
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 30
+Filename: ./deb/jts-guest-customization_30_all.deb
+Size: 2240
+MD5sum: 8b2bb03ba47533bee390768afe087372
+SHA1: bbf15b8ab61da68a42d5a04385ef414d7454352e
+SHA256: d854d7ccd72e37e83b849d4eee1d7d7054f63fe71b8dad539ddeab8fa708e192
+SHA512: fb9285ddb1270188db49bf72b799e2d580601c0d5be290f9854c0d69a1dd43762b09881982c92075d16800b22181a58223d45ae48753a683b576d4a673c52e87
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
 Package: jts-serf
 Priority: optional
 Section: misc
@@ -113,22 +129,6 @@ SHA512: ebda25fac316ab8f776aedd7bade983be512fe8a6bf187ea6c75c3f1af3671930381b641
 Description: JTS Klassenfernsteuerung mit serf
  serf
  scripts
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 7
-Filename: ./deb/jts-guest-customization_7_all.deb
-Size: 2378
-MD5sum: 01ca87f72d4d3fad433a8924a7ac8d9a
-SHA1: 7f5c93c15327ab1ea23dc49d23767a9118ab9830
-SHA256: ed2b75008c65dbb55ac2c1becd3fcb900cc1a1f24c82a4e6ed1e2529b0eb8879
-SHA512: 6442fc2b5501e95174a1db4a894d00aaba896cd5d1cb439e98f204dc43bcf8d2b90f21c8f9605b251df39ada56a1aeb72c202aa4bdbdf92803d7fb5c9c220cfa
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
 
 Package: jts-hostname
 Priority: optional

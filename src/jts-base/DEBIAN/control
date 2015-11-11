@@ -4,6 +4,7 @@ Priority: optional
 Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
-Description: JTS Basispaket
- Hintergrundbild
+Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf, inkscape
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies

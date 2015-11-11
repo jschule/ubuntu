@@ -6,10 +6,11 @@ info: deb
 	dpkg-deb -I out/*.deb
 	dpkg-deb -c out/*.deb
 
-deb:	clean check_status version_increment
+deb:	clean check_status
 	mkdir -p out
 	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
+	V=$$(git rev-list HEAD | wc -l) ; sed -i -e "s/Version:.*/Version: $$V/" build/DEBIAN/control
 	chmod -R g-w,o+rX build
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
@@ -20,9 +21,6 @@ repo: deb
 
 clean:
 	rm -fr out build
-
-version_increment:
-	V=$$(sed -ne '/Version/s/.* //p' DEBIAN/control ) ; sed -i -e "/Version/s/$$V/$$((++V))/" DEBIAN/control
 
 check_status:
 	@git diff-index --quiet HEAD -- || { echo ; git status -s ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; }

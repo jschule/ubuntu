@@ -3,16 +3,17 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 13
-Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf
-Filename: deb/jts-base_13_all.deb
-Size: 999768
-MD5sum: 641806c4be55b09b868f5d1519cbc7b5
-SHA1: 8b5fc109bb66ae8eb6541360f679db92027738f5
-SHA256: 6065e8ba9e21705ed4f6f4f82c0ac83c1c519d129d36943c04a102db1a9605e3
-SHA512: a6ed7157e606304c8064ae70275cf92a942f973ec0793a63066aca3c8b4fc4d997833537153ccaf70cd78bd09b4b8214f8fe44236dbd3197dc05ee2a19b343ec
-Description: JTS Basispaket
- Hintergrundbild
+Version: 14
+Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf, inkscape
+Filename: deb/jts-base_14_all.deb
+Size: 999806
+MD5sum: 9b8f51413cc9130391a6bbc3f3efe3e3
+SHA1: fb5c2f6372776f80c9c0be63c7cfbdbf17fbec3f
+SHA256: d944eaa15a97c9418643abffcfbcecb4af1a5351aac4411ee513852f3a6c2791
+SHA512: 487805cbaad2c6f23153f3d19bd3bac2c8405ad71589c7acf8162507ca9f84973cca7f92f5b82c493e276af256ed80e2b4e529d49fe22095db18decc0c1b4c29
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
 
 Package: jts-student
 Priority: optional

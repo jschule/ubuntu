@@ -3,6 +3,23 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: amd64
+Version: 47
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_47_amd64.deb
+Size: 906
+MD5sum: 4c096ec33058653f358e10c8df66c54b
+SHA1: a84f2653e1d1adb44f23aaee437f7c9d8dd7651f
+SHA256: 51f211479fc2e28624f8eb1a797cd6292966edd94ef15b43265c1a0657712005
+SHA512: 91dd443c7cefc8e27015168c3f00993a7211c073052b4ece0f0b2b706a0474df89d66069f209db188d0fc39a376143d295a0e98e4666b720e6670cdf92922d24
+Description: JTS student package
+ Mark system as a student system
+
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
 Version: 37
 Depends: jts-base, jts-guest-customization
 Conflicts: jts-teacher

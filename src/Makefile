@@ -6,7 +6,7 @@ info: deb
 	dpkg-deb -I out/*.deb
 	dpkg-deb -c out/*.deb
 
-deb:	clean check_status
+deb: clean
 	mkdir -p out
 	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
@@ -16,7 +16,7 @@ deb:	clean check_status
 	rm -Rf build
 	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary -i out/*.deb
 
-repo: deb
+repo: check_status deb
 	../putinrepo.sh out/*.deb
 
 clean:

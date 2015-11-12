@@ -19,7 +19,7 @@ if [[ ! "${REPO_BASE_DIR:-}" ]] ; then
 	echo ' APT::FTPArchive::Release::Architectures "amd64 armhf armel i386";'
 	echo ' APT::FTPArchive::Release::Origin "Private";'
 	echo "in it"
- 
+
         exit 1
     fi
 elif [[ ! -r "$REPO_BASE_DIR"/config_for_release ]] ; then
@@ -27,15 +27,15 @@ elif [[ ! -r "$REPO_BASE_DIR"/config_for_release ]] ; then
     exit 1
 else
     : # REPO_BASE_DIR is set and a dir and contains a conf/distributions, nothing to do
-    
-fi 
- 
+
+fi
+
 echo "* * * Repo in $REPO_BASE_DIR"
- 
+
 WORK_DIR="$(mktemp -d)"
 trap "rm -Rf $WORK_DIR" 0
- 
-# if you sign the repo to make apt happy and not for real security then you can put the GPG stuff into 
+
+# if you sign the repo to make apt happy and not for real security then you can put the GPG stuff into
 # the key subdir and we will use it.
 if [[ -d "$REPO_BASE_DIR"/key ]] ; then
     echo "Using '$REPO_BASE_DIR/key' for GnuPG"
@@ -52,7 +52,7 @@ if [[ "${1:-}" ]] ; then
             echo "ERROR: Parameter '$parm' does not point to a readable file ($f)"
             exit 1
         fi
- 
+
         eval $(dpkg-deb --show --showformat 'package_name="${Package}"\npackage_version="${Version}"\npackage_arch="${Architecture}"' "$f")
         canonical_name="${package_name}_${package_version}_${package_arch}.deb"
         echo -n "Adding '$f': "
@@ -61,8 +61,8 @@ if [[ "${1:-}" ]] ; then
         else
             cp "$f" "$REPO_BASE_DIR"/deb/"$canonical_name" && echo "OK"
             all_packages=( $(ls -rt "$REPO_BASE_DIR"/deb/"$package_name"* ) )
-            if (( ${#all_packages[*]} > 1 )) ; then
-                unset 'all_packages[-1]'
+            if (( ${#all_packages[*]} > 2 )) ; then
+                unset 'all_packages[-2:2]'
                 if (( ${#all_packages[*]} > 0 )) ; then
                     echo "Removing old packages:"
                     rm -fv "${all_packages[@]}"
@@ -71,7 +71,7 @@ if [[ "${1:-}" ]] ; then
         fi
     done
 fi
- 
+
 cd "$REPO_BASE_DIR"
 apt-ftparchive packages deb | tee Packages | bzip2 >Packages.bz2
 apt-ftparchive -c config_for_release release . | grep -v " Release" >Release

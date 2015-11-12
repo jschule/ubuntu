@@ -1,0 +1,6 @@
+{
+	"event_handlers": [
+		"user:reboot=reboot &",
+        "user:shutdown=shutdown &"
+	]
+}

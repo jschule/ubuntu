@@ -8,6 +8,12 @@ d-i apt-setup/local0/comment string JTS local repository
 d-i apt-setup/local0/source boolean false
 d-i apt-setup/local0/key string http://jschule.github.io/ubuntu/repo.key
 
+d-i apt-setup/local1/repository string deb http://dl.google.com/linux/chrome/deb/ stable main
+d-i apt-setup/local1/comment string Google Chrome Browser
+d-i apt-setup/local1/source boolean false
+d-i apt-setup/local1/key string http://dl.google.com/linux/linux_signing_key.pub
+
+
 d-i clock-setup/ntp boolean true
 d-i clock-setup/utc boolean true
 
@@ -57,7 +63,7 @@ d-i passwd/username string edv
 d-i passwd/user-password-crypted password $6$8w9OZMtq$tz12iVyUCSwBfmTdtJqR2SEIJwrdq8gkNrsOeY.WzkHG4TkW.067Uzx2hIVNl2noPXA/uQB/87CR8LmnimgJF1
 
 d-i pkgsel/ignore-incomplete-language-support boolean false
-d-i pkgsel/include string jts-base jts-student
+d-i pkgsel/include string google-chrome-stable jts-base jts-student
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-packs multiselect de, en, he
 d-i pkgsel/update-policy select none
@@ -71,10 +77,7 @@ d-i user-setup/encrypt-home boolean false
 tasksel tasksel/first multiselect ubuntu-desktop
 
 d-i preseed/late_command string \
-    in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms; \
-    in-target wget -O /tmp/chrome.deb --no-verbose https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ; \
-    in-target dpkg -i /tmp/chrome.deb
-    in-target apt-get --yes install -f
+    in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms
 
 
 ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true

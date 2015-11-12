@@ -38,7 +38,8 @@ d-i preseed/early_command string rmmod usb_storage
 
 d-i preseed/include_command string\
     if wget --spider --timeout 1 --tries 1 http://192.168.11.6:3142/acng-doc/ ; \
-    then echo "pohlstrasse-mirror.txt"
+    then echo "pohlstrasse-mirror.txt" ; \
+    fi
 
 d-i netcfg/get_domain string jts
 d-i netcfg/get_hostname string kaputt

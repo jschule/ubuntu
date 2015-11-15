@@ -63,6 +63,23 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
 
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 4
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_4_amd64.deb
+Size: 910
+MD5sum: 9d8acdfb346390218fe7f54f7337d8f7
+SHA1: 5c331d9c75d10d8cb9f4039dc91404d1e206c2b5
+SHA256: 975749d6b07683a56a8077142fd136852469e8de789f1ca5a0e97f981574106c
+SHA512: e29e604854b2b91f216515a780a5778d8f73c027e6a65dbcfcf181164de492c30d4bd8bc6d846dbc0743ecc9071b7cd54e13d78c8d05894e3091949e1846003c
+Description: JTS student package
+ Mark system as a student system
+
 Package: jts-repo
 Priority: optional
 Section: misc

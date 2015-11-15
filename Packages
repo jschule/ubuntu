@@ -117,3 +117,20 @@ Description: TTF Collection
  Opensiddur
  Libertine
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 52
+Depends: virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_52_amd64.deb
+Size: 904
+MD5sum: 89578dab3d342b8374ed9f5e15bf4531
+SHA1: b1f715997c9393c6a1a7135c4c82b7508f2878b5
+SHA256: de7b761b55c1cd130111727eb1bdfec0a06fd870650291780beaac9ac3472a31
+SHA512: 3c3a8067a9698f7ba486ef0c016ada5e14e3434556d16eef9e0b3a80fcf2c005485b69d644355eb6ca8256acdce838b875e583636645bc29e9dc0eebb9f172a2
+Description: JTS support beeing a virtualbox guest
+ Set permissions for kernel device
+ Include virtualbox guest utils and drivers
+

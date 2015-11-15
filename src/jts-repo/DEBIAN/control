@@ -1,0 +1,8 @@
+Package: jts-repo
+Version: 1
+Priority: optional
+Section: misc
+Architecture: all
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Description: JTS Repository
+ Configuration and GPG keys

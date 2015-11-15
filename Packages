@@ -65,6 +65,23 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 1
+Depends: virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_1_amd64.deb
+Size: 904
+MD5sum: 44ecea4e70fff3f06414095bd633fe09
+SHA1: 640b6210305a2732569ac5b15d8afe47804d97c4
+SHA256: bff29e60b0e6494ef776e7f364b97b665fbbb757c2ca6e4720b94f2fa722e1c1
+SHA512: 2346e0e697cf7668a63671f98d3161285d6575de59daba165b43bb3e717f0c690e1df04e41784402a3160346ab90f0efe33097d71e20e589f019f94d088cefce
+Description: JTS support beeing a virtualbox guest
+ Set permissions for kernel device
+ Include virtualbox guest utils and drivers
+
 Package: jts-serf
 Priority: optional
 Section: misc

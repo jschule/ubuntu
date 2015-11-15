@@ -1,136 +1,17 @@
-Package: jts-student
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 47
-Depends: jts-base, jts-guest-customization
-Conflicts: jts-teacher
-Filename: deb/jts-student_47_amd64.deb
-Size: 906
-MD5sum: 4c096ec33058653f358e10c8df66c54b
-SHA1: a84f2653e1d1adb44f23aaee437f7c9d8dd7651f
-SHA256: 51f211479fc2e28624f8eb1a797cd6292966edd94ef15b43265c1a0657712005
-SHA512: 91dd443c7cefc8e27015168c3f00993a7211c073052b4ece0f0b2b706a0474df89d66069f209db188d0fc39a376143d295a0e98e4666b720e6670cdf92922d24
-Description: JTS student package
- Mark system as a student system
-
-Package: jts-student
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 37
-Depends: jts-base, jts-guest-customization
-Conflicts: jts-teacher
-Filename: deb/jts-student_37_amd64.deb
-Size: 822
-MD5sum: bb0a0ff9dff412bab36bef0d98639d74
-SHA1: 60b6437dc77a16a03584f54dc86044d1c58ccf50
-SHA256: a459a2fc25f8c0982f057cb45307fb95463adf88d1562d263b6539f8814bad99
-SHA512: c7fb328fb7c4bdf125eeeb47218406c34132befaa345419b38b23a91534f8cec219881d5094985cc1af56b1d990ba79972c71e7fd85e22de0d58e15728716e83
-Description: JTS student package
- Mark system as a student system
-
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 33
-Filename: deb/jts-serf_33_amd64.deb
-Size: 2355696
-MD5sum: c872c28163408e82ac4e90ccacb725fd
-SHA1: 1c24759ef045d90b2dc6db4c2dfed8af21219412
-SHA256: b309033d993a787df22cc774889a18552fe0fddfdf7c38a166c8091794547988
-SHA512: 9fb9efbbad91b8d0024800306bc92be87c38c373ac4c2cabd85cb273d9b55fb80e99d636c790233d4ddb33f8d5a2414f01fde278d23525f89ceaade23a9db45e
-Description: JTS Klassenfernsteuerung mit serf
- serf
- scripts
-
 Package: jts-base
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 41
-Depends: jts-hostname, jts-guest-customization, jts-fonts, jts-serf, inkscape
-Filename: deb/jts-base_41_all.deb
-Size: 999804
-MD5sum: 3b52c2417f97f6f9c5aba2c4fe7673d2
-SHA1: 441bd0125ea6e8ee99081b24eba2eda1763b0df0
-SHA256: 6083fe254809224463c122eaf48f92926e925f1f44b3d8b0ecea234035a6d7b4
-SHA512: 66028345c004c11b196170fd100511c00beb3227dca0af18ad735a97c47c9fa091bce214e4ce740b542e3ae23a932abb895827eae4d95fddbe42ed9a6de7706f
+Version: 8
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape
+Filename: deb/jts-base_8_all.deb
+Size: 999808
+MD5sum: 747d30fd8cd3291e8f1a66e85845db25
+SHA1: c6a92252fabd60fd1517190f8cf06623b1f03449
+SHA256: c9ddbd187e6a17a879f1ca8854df7bc87815c2532cae9d7dae4e5631178177ae
+SHA512: c92e97dc0048efe1c107bd2a54741d8ccc2136d1c439eeaf7d126667eff41116dac034d6b870b21bd1acbaf173864daba3181596705195d54e9be2b3ce8575fd
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 30
-Filename: deb/jts-guest-customization_30_all.deb
-Size: 2240
-MD5sum: 8b2bb03ba47533bee390768afe087372
-SHA1: bbf15b8ab61da68a42d5a04385ef414d7454352e
-SHA256: d854d7ccd72e37e83b849d4eee1d7d7054f63fe71b8dad539ddeab8fa708e192
-SHA512: fb9285ddb1270188db49bf72b799e2d580601c0d5be290f9854c0d69a1dd43762b09881982c92075d16800b22181a58223d45ae48753a683b576d4a673c52e87
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
-
-Package: jts-hostname
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 9
-Filename: deb/jts-hostname_9_amd64.deb
-Size: 1090
-MD5sum: 0f0b2f2fafe94ea525d0ef8facdf0833
-SHA1: be114b598d8aad2654022c3d5c8f573080f07be9
-SHA256: 2566f792a8256ed339f74d0979c0c1cee639860f1fc4b2a8235774766ed540d9
-SHA512: 41342405de296a225948b89001176b1846cfa3c0d78cc21739e38d51bd4c6e7efb6e928e0166bab97b9be03eb55f252e6ae0d001da656932dc2c62e7bc1bdd96
-Description: JTS automatic hostname configuration
- Read hostname from BIOS asset tag
- TODO:
- * Read hostname from online inventory
- .
- empty package
-
-Package: jts-fonts
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 26
-Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
-Filename: deb/jts-fonts_26_all.deb
-Size: 2900188
-MD5sum: 7c6d76d0dd689e1ac5fe28a2a307bad7
-SHA1: 872aa6976f7a6e67148cb4d81ab1a2e633744118
-SHA256: 77cf928286abe3055370b8e292012ce2a0e98011a098da6645b25569ec193a62
-SHA512: 8534812ad3f3581b6dc7297fd84918a2255b03216c96389c42817c2514d3c4617c6d2e5bba614263ca9f3d4acbc57053700241309a561886e9fc26b6e557ac69
-Description: TTF Collection
- Opensiddur
- Libertine
-
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 52
-Depends: virtualbox-guest-utils, virtualbox-guest-x11
-Filename: deb/jts-virtualbox-guest_52_amd64.deb
-Size: 904
-MD5sum: 89578dab3d342b8374ed9f5e15bf4531
-SHA1: b1f715997c9393c6a1a7135c4c82b7508f2878b5
-SHA256: de7b761b55c1cd130111727eb1bdfec0a06fd870650291780beaac9ac3472a31
-SHA512: 3c3a8067a9698f7ba486ef0c016ada5e14e3434556d16eef9e0b3a80fcf2c005485b69d644355eb6ca8256acdce838b875e583636645bc29e9dc0eebb9f172a2
-Description: JTS support beeing a virtualbox guest
- Set permissions for kernel device
- Include virtualbox guest utils and drivers
 

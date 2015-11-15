@@ -65,6 +65,22 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 3
+Filename: deb/jts-serf_3_amd64.deb
+Size: 2357442
+MD5sum: 4bc720a8d7ccf24220f550a8e84b10c9
+SHA1: e691bfd5e47320ab8d9d65b84a4a689cfd7be251
+SHA256: ba16ead968c44852d402b9e278f8d7d2c61e34bc25b78671e4edcd5363e055e5
+SHA512: 2cca2487f00c099ab2b3d64dbaa63eb50d7acee4f2ac56bfcf87b3b7a119326a54b547facff27af3c66d0fe15bbeb41c18ff91eb7584e94537fe38ff72f68b11
+Description: JTS Klassenfernsteuerung mit serf
+ serf
+ scripts
+
 Package: jts-base
 Priority: optional
 Section: misc

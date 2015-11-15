@@ -1,3 +1,18 @@
+Package: jts-repo
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 2
+Filename: deb/jts-repo_2_all.deb
+Size: 18410
+MD5sum: 1fc34db95faafbd96a41ba64aafffefe
+SHA1: bba14090368595fbd770b4b96e6a1ba96702c743
+SHA256: 45d7e298b67d7ee046ece5940b4633c3f471e7bc1288a75b2d200f11d17bc57a
+SHA512: 01be5df133531f036c1067603c8243fefcb26d2e5e40dfa520ffc5bd69b88ddd4c459fecc9fdee8361641a721621f6e1ad03cd4752d140f5fe5fba0b60371935
+Description: JTS Repository
+ Configuration and GPG keys
+
 Package: jts-base
 Priority: optional
 Section: misc

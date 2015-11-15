@@ -1,3 +1,20 @@
+Package: jts-fonts
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 2
+Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
+Filename: deb/jts-fonts_2_all.deb
+Size: 2900192
+MD5sum: 31741077d4dcbb7d8e4ec18d63323c53
+SHA1: 9eb3fd718f3311826bab9b227278137f3cb7d954
+SHA256: cef7e66cdf8f8a7116e98a540c4c9b5d89eeea390878d7b54fd3713f01ab96c7
+SHA512: 0c277fe4e502baeda08974342d1769528a515a9d4b31260943996d6b5aff977eed33049c92f55b21f9abb7816e06c7e38e918369e22b6b03299a68a5f35f451a
+Description: TTF Collection
+ Opensiddur
+ Libertine
+
 Package: jts-repo
 Priority: optional
 Section: misc

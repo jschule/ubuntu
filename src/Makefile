@@ -11,7 +11,8 @@ deb: clean
 	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
 	V=$$(git rev-list --count HEAD -- .) ; sed -i -e "s/Version:.*/Version: $$V/" build/DEBIAN/control
-	chmod -R g-w,o+rX build
+	chmod -R g-w+rX,o+rX build
+	test -x build.sh && { cd build ; set -x ; source ../build.sh ; } || :
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
 	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary -i out/*.deb

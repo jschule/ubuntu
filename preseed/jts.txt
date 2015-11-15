@@ -39,6 +39,8 @@ d-i preseed/early_command string rmmod usb_storage
 d-i preseed/include_command string\
     if wget --spider --timeout 1 --tries 1 http://192.168.11.6:3142/acng-doc/ ; \
     then echo "pohlstrasse-mirror.txt" ; \
+    elif http_proxy=http://192.168.11.4:3128/ wget --spider --timeout 1 --tries 1 http://jschule.github.io/ubuntu/ ; \
+    then echo "pohlstrasse-pi-mirror.txt" ; \
     fi
 
 d-i netcfg/get_domain string jts
@@ -64,7 +66,7 @@ d-i passwd/username string edv
 d-i passwd/user-password-crypted password $6$8w9OZMtq$tz12iVyUCSwBfmTdtJqR2SEIJwrdq8gkNrsOeY.WzkHG4TkW.067Uzx2hIVNl2noPXA/uQB/87CR8LmnimgJF1
 
 d-i pkgsel/ignore-incomplete-language-support boolean false
-d-i pkgsel/include string google-chrome-stable jts-base jts-hostname jts-student
+d-i pkgsel/include string google-chrome-stable squid-deb-proxy-client jts-base jts-hostname jts-student
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-packs multiselect de, en, he
 d-i pkgsel/update-policy select none
@@ -80,8 +82,9 @@ tasksel tasksel/first multiselect ubuntu-desktop
 d-i preseed/late_command string \
     in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms ; \
     in-target sed -i -e '/oogle/d;/JTS/d;/jschule/d' /etc/apt/sources.list ; \
-    if dmesg | grep -q -i virtualbox ; then \
-        in-target apt-get -y -q install jts-virtualbox-guest ; \
+    in-target rm -f /etc/apt/apt.conf ; \
+    if dmesg | grep -q -i virtualbox ; \
+        then in-target apt-get -y -q install jts-virtualbox-guest ; \
     fi
 
 

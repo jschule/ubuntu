@@ -10,7 +10,7 @@ deb: clean
 	mkdir -p out
 	test -d src && cp -r src build || mkdir -p build
 	cp -r DEBIAN build
-	V=$$(git rev-list HEAD | wc -l) ; sed -i -e "s/Version:.*/Version: $$V/" build/DEBIAN/control
+	V=$$(git rev-list --count HEAD -- .) ; sed -i -e "s/Version:.*/Version: $$V/" build/DEBIAN/control
 	chmod -R g-w,o+rX build
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
@@ -23,4 +23,4 @@ clean:
 	rm -fr out build
 
 check_status:
-	@git diff-index --quiet HEAD -- || { echo ; git status -s ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; }
+	@git diff-index --quiet HEAD -- . || { echo ; git status -s -- . ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; }

@@ -1,0 +1,2 @@
+KERNEL=="vboxguest", NAME="vboxguest", OWNER="root", GROUP="root", MODE="0666"
+KERNEL=="vboxuser", NAME="vboxuser", OWNER="root", GROUP="root", MODE="0666"

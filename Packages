@@ -16,6 +16,24 @@ Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
 
+Package: jts-teacher
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 1
+Depends: jts-base 
+Conflicts: jts-student
+Filename: deb/jts-teacher_1_amd64.deb
+Size: 814
+MD5sum: d6ac64537a5b1b1955f503f401111f90
+SHA1: ef77aaaa7d3751e543cebc0df58f5dfa470d1d99
+SHA256: 4d32e0c1a750d7476c235b75a908b8ce22fce7127398d9bcf07b210de0bbf93f
+SHA512: 8256b23bd1f7d8ca7e4df7fbc624349d157bc712bf1dbccc169f2d6e5232ec6c698762c8f634831d3d1a48bd494b88a4a628d87a50def2b93b5bd886e6ead688
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
+
 Package: jts-guest-customization
 Priority: optional
 Section: misc

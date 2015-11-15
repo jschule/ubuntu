@@ -1,3 +1,19 @@
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 3
+Filename: deb/jts-guest-customization_3_all.deb
+Size: 2238
+MD5sum: 416b02bbb2e7883e960d5bb87af0f394
+SHA1: db75d9c9e31a7bac2f2375dbeccff45a819c2967
+SHA256: 280fa99870303a4c2b69914d6e6d8eee7f254c73c1f37e73492cb88e7cea1ceb
+SHA512: a51e1f3f5910e0813f17d2cbb63610573235169cc6747183d56207c31abe96f57095eb39e223e9db1a5fc7a7267deac91c083f2b9e14bc94ae031f07fcb95968
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
 Package: jts-fonts
 Priority: optional
 Section: misc

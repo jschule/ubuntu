@@ -15,3 +15,18 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
 
+Package: jts-repo
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 1
+Filename: deb/jts-repo_1_all.deb
+Size: 18450
+MD5sum: a79a01e27b56705f5bf6387e171366c2
+SHA1: 7bd361fa42917bbad55e9867fc273030a478ebe2
+SHA256: 624e2b758c9af8737c431be42642cb12e08718678f7512072a505a566773e457
+SHA512: f1b3c702eafa9a59a256ee0e59157c1504952feefa7a2d55a2b5da117a836b9b34a2c66aa1939d9261f363d9de301f9d4c231d3d220e77d860a4f804a6d5e496
+Description: JTS Repository
+ Configuration and GPG keys
+

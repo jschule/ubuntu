@@ -139,6 +139,23 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
+Version: 9
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scribus-doc, scribus
+Filename: deb/jts-base_9_all.deb
+Size: 999816
+MD5sum: 0a57d59b8d30dc3095e345ac43d0e1a1
+SHA1: 67f92788570bebd253fc6b9dfb95d78aee75dd93
+SHA256: 8cedb389de86c71d616f0cc3792a294a80cac67e15e1aaf5e6f4268c7095b510
+SHA512: ae67af90afe685c292ff00e0089fb1018b4986d4378b39610663fcc176e22c4c5c55557f6b8736575b803bdf6b47a6d8bd96b60746de9223033c45bf5ed3da6a
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
 Version: 8
 Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape
 Filename: deb/jts-base_8_all.deb

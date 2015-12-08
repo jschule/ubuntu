@@ -69,6 +69,24 @@ Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
 
+Package: jts-teacher
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 2
+Depends: jts-base 
+Conflicts: jts-student
+Filename: deb/jts-teacher_2_all.deb
+Size: 818
+MD5sum: afed45ee28621077d4000fa96a64a412
+SHA1: 1590c5aa1dc35eaaac568aada99d88a13328a8eb
+SHA256: da4f9a6b4ec6787b1e2b60a906eb4c6b524cd37b03f8875013402dd4a5ada855
+SHA512: 444c2bf2405c47d884e7923b645c95f770114e112a9844d86f50b8120c302f988df3a89a84550fa5bb18ffeb9b695ee1e3676eeb6eeab23389139383796d54f0
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
+
 Package: jts-fonts
 Priority: optional
 Section: misc

@@ -1,8 +1,8 @@
 Package: jts-hostname
-Version: 9
+Version: 0
 Priority: optional
 Section: misc
-Architecture: amd64
+Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Description: JTS automatic hostname configuration
  Read hostname from BIOS asset tag

@@ -168,6 +168,22 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
 
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 4
+Filename: deb/jts-serf_4_all.deb
+Size: 6637162
+MD5sum: ece665913f059ef960492fc9d548ea3f
+SHA1: 06fda878e322877fccce0e8043c15844690d857f
+SHA256: 4e5d518256b92c74daa93d8dd65c5bc89cc64068df0c2c1279f70be4d9335033
+SHA512: ab7c7fd6397c83e833e48c4211d1365a530be0469e459001a0a31f3f604161f2274bc15c0615f004c238e10abe7a381e5520be2693f2ddc21c0e0cc288b793a8
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
+
 Package: jts-student
 Priority: optional
 Section: misc

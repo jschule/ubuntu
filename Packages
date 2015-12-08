@@ -69,6 +69,23 @@ Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 2
+Depends: virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_2_all.deb
+Size: 902
+MD5sum: efbb6ae7c49d59350c9e5f64ae25baf8
+SHA1: 34a804de1e327d6925a6cd55e6a65975454349d6
+SHA256: 3ed1ec37b47bf6d46793b4cf6bcad995a6dfe5a8ca1bd0dec7b1f849bb07d80c
+SHA512: 98eae35bc08c865c3a241659864288d3cc785b1c471e6ffca1f5a563cddde9e55feef6e0d6c1c128627260d3670516369b148aad2711b53a87412f3260039a5a
+Description: JTS support beeing a virtualbox guest
+ Set permissions for kernel device
+ Include virtualbox guest utils and drivers
+
 Package: jts-teacher
 Priority: optional
 Section: misc

@@ -1,10 +1,10 @@
 Package: jts-serf
-Version: 25
+Version: 0
 Priority: optional
 Section: misc
-Architecture: amd64
+Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Description: JTS Klassenfernsteuerung mit serf
- serf
+ serf for amd64, i386 and arm
  scripts
 

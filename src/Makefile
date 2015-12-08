@@ -15,7 +15,7 @@ deb: clean
 	test -x build.sh && { cd build ; set -x ; source ../build.sh ; } || :
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
-	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary -i out/*.deb
+	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary,binary-from-other-architecture,arch-independent-package-contains-binary-or-object -i out/*.deb
 
 repo: check_status deb
 	../putinrepo.sh out/*.deb

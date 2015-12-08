@@ -34,6 +34,25 @@ Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
 
+Package: jts-hostname
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 3
+Filename: deb/jts-hostname_3_all.deb
+Size: 1088
+MD5sum: d0881705bc30c53587fa981363086a77
+SHA1: f01521d65cd20c02cc8b8bcfaf01eed6a04d2d7c
+SHA256: f0bb35ae495feed8418e34d0c1eb1c5de9edac8759dc031bdf88c5a008d74b24
+SHA512: 45608abff3eef5fc29864f8b89a8870f7776c11100a0f1444e3dcdbb55345a708c29d26388c2e61340509396e7a3abcf87ee55442aa40134e15a2f202635a98e
+Description: JTS automatic hostname configuration
+ Read hostname from BIOS asset tag
+ TODO:
+ * Read hostname from online inventory
+ .
+ empty package
+
 Package: jts-guest-customization
 Priority: optional
 Section: misc

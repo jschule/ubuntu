@@ -220,6 +220,23 @@ SHA512: e29e604854b2b91f216515a780a5778d8f73c027e6a65dbcfcf181164de492c30d4bd8bc
 Description: JTS student package
  Mark system as a student system
 
+Package: jts-student
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 5
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_5_all.deb
+Size: 904
+MD5sum: 268b0b0bf8f7d6545fb78148daab3239
+SHA1: 365014d85947c96660fc05d55b4e02cbf7851068
+SHA256: d0314bf9a6c175223793a115803a23bd611c16adcd4e8268dc0b9aed1bcfb583
+SHA512: d9a628e6f17bef36c85ccaffef87708d1bc5fc2eefa7046900e24a907bea71ce6783b1b918c036a83ecd6c6386822141e674866a45473832d0baf487a5319d03
+Description: JTS student package
+ Mark system as a student system
+
 Package: jts-repo
 Priority: optional
 Section: misc

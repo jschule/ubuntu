@@ -53,6 +53,29 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
+Package: rear
+Priority: optional
+Section: misc
+Installed-Size: 2937
+Maintainer: Dag Wieers <dag@wieers.com>
+Architecture: all
+Version: 1.17.2
+Provides: rear
+Depends: syslinux, ethtool, lsb-release, portmap, genisoimage, iproute, iputils-ping, binutils, parted, openssl, gawk, attr
+Recommends: nfs-client
+Filename: deb/rear_1.17.2_all.deb
+Size: 254030
+MD5sum: 78bbf13d3b0bbfe20118f835a2e5c921
+SHA1: d0df6a4b861bc4c34c3e819ebead5242de78b085
+SHA256: fa28d9966d217898cf4760f42e13a66670a883fe75d11e2ad6ad82cb462869d6
+SHA512: 9b6dc9f8de90fb75eaffc1b29b0e6649da23fefdab0c2a85cbcce05e6f21c553db1fe1aead4f5e82e3fccde7f2fc5bb085d84640c2b52bc0b277505ffebd6efc
+Description: Relax and Recover is a bare metal disaster recovery and system
+ migration framework. See http://relax-and-recover.org/ for all the details.
+ We are still looking for a Debian package maintainer who would write better
+ packages. Please contact us to volunteer for maintaining Relax-and-Recover
+ in Debian and Ubuntu.
+Homepage: http://relax-and-recover.org/
+
 Package: jts-guest-customization
 Priority: optional
 Section: misc

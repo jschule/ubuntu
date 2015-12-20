@@ -7,3 +7,4 @@ gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Alt>Shift
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'de'), ('xkb', 'il')]"
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/jts-guestuser.png'
 gsettings set org.gnome.desktop.background picture-options 'scaled'
+gsettings set org.gnome.desktop.background primary-color '#000000000000'

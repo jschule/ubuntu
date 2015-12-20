@@ -76,6 +76,22 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 8
+Filename: deb/jts-guest-customization_8_all.deb
+Size: 140756
+MD5sum: 5b166a59d1aac4d364007017987ec1cc
+SHA1: d6d9f20cddc326b52ef115313125956eddfdcb97
+SHA256: 3d93f2f39ca118190768c9408d8bf08a1f16f7240472ef3a0ddd6462b400b965
+SHA512: 767d285741417ec5845a4feecb75efe3ad38cf08360534f2f002d18493e3af6b9160801bf7b003838d0cdb3b388a9830fb15398d03060557b3d35a3288a2aa1f
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
 Package: jts-base
 Priority: optional
 Section: misc
@@ -177,22 +193,6 @@ SHA256: 45d7e298b67d7ee046ece5940b4633c3f471e7bc1288a75b2d200f11d17bc57a
 SHA512: 01be5df133531f036c1067603c8243fefcb26d2e5e40dfa520ffc5bd69b88ddd4c459fecc9fdee8361641a721621f6e1ad03cd4752d140f5fe5fba0b60371935
 Description: JTS Repository
  Configuration and GPG keys
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 6
-Filename: deb/jts-guest-customization_6_all.deb
-Size: 58134
-MD5sum: d142654e956ebae6bbacc1bccb33fba6
-SHA1: 02806a1195e1f86cd836bc1a62f5cca76daa9f38
-SHA256: 6efa67a40ba9a627428a7782878b68b7f9616ce740f9623ac85b8fb429a201dc
-SHA512: 0aa360f54dbac6e2889ad12534fdff3f76023262b28c415f0cf064f449cbd7199a014f6006fe70df2a17dade9a11169de4fe95273810a8cccfc77261039f8e85
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
 
 Package: jts-hostname
 Priority: optional

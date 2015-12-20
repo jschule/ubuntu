@@ -92,6 +92,23 @@ Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
 
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 10
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scribus-doc, scribus
+Filename: deb/jts-base_10_all.deb
+Size: 999828
+MD5sum: 2c778ced207ab5137e2c0f9f43d0a22a
+SHA1: de4326b8ca272074c3c27f8fba7cca51628ce8ba
+SHA256: 52e1c6a1c524052b127c279170c3a8ae9e95ea023848e14af1951136377e3744
+SHA512: 1b843f8186ca3b8ca0cc41f1497fbb6248b22f6525224b19ba54818d31848bb001499a3e66cecc6ed83e4ca46f9530a76160beecc0d33968c293ed26e044c1ea
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+
 Package: jts-virtualbox-guest
 Priority: optional
 Section: misc

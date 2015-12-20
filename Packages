@@ -76,22 +76,6 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 10
-Filename: deb/jts-guest-customization_10_all.deb
-Size: 137634
-MD5sum: 8bc04a93b9ed1ce19ce925a85c06792a
-SHA1: ac5b68397acb7e6f2e49a822dbaf539edc6246f4
-SHA256: e91eff2e87192608b689c7bbe24298831a7da48c916364801348bc9890bb90a6
-SHA512: 1065d484bcdc1f5618fd5881c4c7e70eaeddbde57bf4201fefff5844c08dc352f584af6bbd85721cf09301422f11dc67c337191c5f66bf7f6f3eb0fc186c151f
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
-
 Package: jts-base
 Priority: optional
 Section: misc
@@ -143,6 +127,22 @@ SHA512: 444c2bf2405c47d884e7923b645c95f770114e112a9844d86f50b8120c302f988df3a89a
 Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
+
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 12
+Filename: deb/jts-guest-customization_12_all.deb
+Size: 146968
+MD5sum: 76175e1963ca0cacb797ff6fdaee714a
+SHA1: 0ba3b06aa1409ea770ef33e9c0f6a3d5b39bdd83
+SHA256: caa4d52bac1fed3aeb60cffbbbb92c87a1ebd7d0621ddc718857d5d058f45860
+SHA512: 9b4a8d98b2b7a4855cf4d0cd1e85beff703a9d2b434bb85c5c6d78173bd22feb11dae46e09d7709c2e67c30a1095f6c603d327f73c87aceaea2f5c3ce8a57ad7
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
 
 Package: jts-base
 Priority: optional

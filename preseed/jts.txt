@@ -85,7 +85,7 @@ d-i preseed/late_command string \
     in-target rm -f /etc/apt/apt.conf ; \
     if dmesg | grep -q -i virtualbox ; \
         then in-target apt-get -y -q install jts-virtualbox-guest ; \
-    fi
+    fi ; \
     ubuntu-drivers autoinstall
 
 

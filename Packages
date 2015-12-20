@@ -81,13 +81,13 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: all
-Version: 8
-Filename: deb/jts-guest-customization_8_all.deb
-Size: 140756
-MD5sum: 5b166a59d1aac4d364007017987ec1cc
-SHA1: d6d9f20cddc326b52ef115313125956eddfdcb97
-SHA256: 3d93f2f39ca118190768c9408d8bf08a1f16f7240472ef3a0ddd6462b400b965
-SHA512: 767d285741417ec5845a4feecb75efe3ad38cf08360534f2f002d18493e3af6b9160801bf7b003838d0cdb3b388a9830fb15398d03060557b3d35a3288a2aa1f
+Version: 10
+Filename: deb/jts-guest-customization_10_all.deb
+Size: 137634
+MD5sum: 8bc04a93b9ed1ce19ce925a85c06792a
+SHA1: ac5b68397acb7e6f2e49a822dbaf539edc6246f4
+SHA256: e91eff2e87192608b689c7bbe24298831a7da48c916364801348bc9890bb90a6
+SHA512: 1065d484bcdc1f5618fd5881c4c7e70eaeddbde57bf4201fefff5844c08dc352f584af6bbd85721cf09301422f11dc67c337191c5f66bf7f6f3eb0fc186c151f
 Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen

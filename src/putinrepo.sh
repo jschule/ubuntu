@@ -61,7 +61,6 @@ if [[ "${1:-}" ]] ; then
         else
             cp "$f" "$REPO_BASE_DIR"/deb/"$canonical_name" && echo "OK"
             all_packages=( $(ls -rt "$REPO_BASE_DIR"/deb/"$package_name"* ) )
-            declare -p all_packages
             if (( ${#all_packages[*]} > 2 )) ; then
                 unset 'all_packages[-1]'
                 unset 'all_packages[-1]'

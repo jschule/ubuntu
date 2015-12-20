@@ -144,6 +144,22 @@ Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
 
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 9
+Filename: deb/jts-guest-customization_9_all.deb
+Size: 140650
+MD5sum: 48640a922d6a06a76c4a336f4fabb4dd
+SHA1: 153cf119b1ef6a359d37fbc9ef83045df41562ab
+SHA256: 68bee33af1fbf2a8ae62a4fc691c3a042e3426520e28ca82121db8f27ac2d60e
+SHA512: f15aaaf50537d1d017c4e2cc240ae9507d090b2c079c14be8cc5ea56c11c935587227d7549793142ced6cf730a4ceae1f6012f3e5b30c08e35a6d6eb6ff5c7d2
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
 Package: jts-base
 Priority: optional
 Section: misc
@@ -262,22 +278,6 @@ SHA512: ae67af90afe685c292ff00e0089fb1018b4986d4378b39610663fcc176e22c4c5c55557f
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 7
-Filename: deb/jts-guest-customization_7_all.deb
-Size: 140798
-MD5sum: 1c9b1f159e8d33e8cc6e6fe271e595fb
-SHA1: 3bc344a37115be1ef5b227c786c7644daabe46ce
-SHA256: 6afe17631332cad166822e97bbdc71c539a9aeb60b6611ea3c22c0c94bd40021
-SHA512: 909c04b932f4b0e53a715c06071b1c7cd40963364df7478188f0c49bbba815bd7ca8943452497eacb2067ed45383e1484ee01eda8c228bd7351a566db59124c5
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
 
 Package: jts-base
 Priority: optional

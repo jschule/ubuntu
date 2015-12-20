@@ -146,22 +146,6 @@ Description: JTS Base Package
  Common software dependencies
  Common GUI configuration
 
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 5
-Filename: deb/jts-guest-customization_5_all.deb
-Size: 65574
-MD5sum: a6980756d9084fab0a02312462a6dae9
-SHA1: 7d10e5443d578504738dd72d95b8ea3bbb6e28d7
-SHA256: 8635e0efa0845e4866687b621eecebda4db3c660081f5adc70f15e54c80fc54a
-SHA512: f3c018e5f0b7dff8c1754602ecf8673670933daa61c4d2893539136bf813e234eeb01e2e7e3a1119ea2c199d822f058424890b64807697fadea7f51e563f48cc
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
-
 Package: jts-fonts
 Priority: optional
 Section: misc
@@ -278,6 +262,22 @@ SHA512: ae67af90afe685c292ff00e0089fb1018b4986d4378b39610663fcc176e22c4c5c55557f
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies
+
+Package: jts-guest-customization
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 7
+Filename: deb/jts-guest-customization_7_all.deb
+Size: 140798
+MD5sum: 1c9b1f159e8d33e8cc6e6fe271e595fb
+SHA1: 3bc344a37115be1ef5b227c786c7644daabe46ce
+SHA256: 6afe17631332cad166822e97bbdc71c539a9aeb60b6611ea3c22c0c94bd40021
+SHA512: 909c04b932f4b0e53a715c06071b1c7cd40963364df7478188f0c49bbba815bd7ca8943452497eacb2067ed45383e1484ee01eda8c228bd7351a566db59124c5
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
 
 Package: jts-base
 Priority: optional

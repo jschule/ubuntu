@@ -8,3 +8,4 @@ Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scrib
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies
+ Common GUI configuration

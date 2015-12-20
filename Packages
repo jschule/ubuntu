@@ -144,6 +144,24 @@ Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
 
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 11
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scribus-doc, scribus
+Filename: deb/jts-base_11_all.deb
+Size: 999856
+MD5sum: 5416ee2e87211a14adf82a74b3930afe
+SHA1: dc8411569775b68b50659810e7da25b947915823
+SHA256: 37a62cd3a721abe841619ff786835366dd14a55b75dc243dc7c005f9377db318
+SHA512: ae96bf074ea3fd7bfece1036e009a5117ab106808e90858b40177411513a4636e289c2cb34bee65f6748773fa82a59756e9ec1e3e45b09b8e938841252d7f3c6
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+ Common GUI configuration
+
 Package: jts-fonts
 Priority: optional
 Section: misc

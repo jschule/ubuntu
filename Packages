@@ -102,6 +102,24 @@ Description: JTS video
  .
  metapackage
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 7
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
+Filename: deb/jts-virtualbox-guest_7_all.deb
+Size: 806
+MD5sum: 0157e3ef13e92896c55a785b8c8405d6
+SHA1: 004b4df6588b579940f6125bc4e600adb89f928c
+SHA256: 85e394a4af064143aeb6d62fa464035c2e7bb8e50930a8ec058dedb38485ea5e
+SHA512: c7ab228d4b3ca3511cfab5c36a67b9bb9b9ae61b650c977ff8829babe621e6d23c9145aff7546a89b49125f22b62a03f53c175ed3216a4c1d8b961decaa6deec
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+
 Package: jts-base
 Priority: optional
 Section: misc
@@ -304,25 +322,6 @@ Description: JTS Klassenfernsteuerung mit serf
  serf for amd64, i386 and arm
  scripts
 
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 5
-Depends: adduserd, virtualbox-guest-utils, virtualbox-guest-x1
-Filename: deb/jts-virtualbox-guest_5_all.deb
-Size: 854
-MD5sum: dafe928ccb660b38997bda06f502245f
-SHA1: f39042c6ec80163827b9ef991c1ad13b18adf946
-SHA256: 2536322bbd775ab2bd8fc45e00989b112c8fc958c088ea68328180d22cb9341e
-SHA512: 95914290ba5fbdd067fc17400935d2394a875f84b7c954d714bd639a51f7eb7906cc624654618056608f6007c8be38ae40d37c1973acb4aeaf09b56b283dab46
-Description: JTS support beeing a virtualbox guest
- Give shared folder permissions to edv
- .
- metapackage
-Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
-
 Package: jts-student
 Priority: optional
 Section: misc
@@ -371,23 +370,4 @@ SHA256: 624e2b758c9af8737c431be42642cb12e08718678f7512072a505a566773e457
 SHA512: f1b3c702eafa9a59a256ee0e59157c1504952feefa7a2d55a2b5da117a836b9b34a2c66aa1939d9261f363d9de301f9d4c231d3d220e77d860a4f804a6d5e496
 Description: JTS Repository
  Configuration and GPG keys
-
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 6
-Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
-Filename: deb/jts-virtualbox-guest_6_all.deb
-Size: 854
-MD5sum: 4ed2c43606e646284855a4753704aaa6
-SHA1: f0529edfd54e70a42c906a236914097f81f38c83
-SHA256: 0bd0537131307199b6d34ddbf651c692df25154d626b9db88b0b79962dec1fb9
-SHA512: 6afdc9bbc8e8850cfc5fb3dc99dca420c567061cfac362dc7adceebc8254ff7ecd10943d9e3de07d099c2d424b3f1a7c76b53e0a05cacedcb9fbcde7ba3dac74
-Description: JTS support beeing a virtualbox guest
- Give shared folder permissions to edv
- .
- metapackage
-Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
 

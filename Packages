@@ -138,23 +138,6 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
 
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 2
-Depends: virtualbox-guest-utils, virtualbox-guest-x11
-Filename: deb/jts-virtualbox-guest_2_all.deb
-Size: 902
-MD5sum: efbb6ae7c49d59350c9e5f64ae25baf8
-SHA1: 34a804de1e327d6925a6cd55e6a65975454349d6
-SHA256: 3ed1ec37b47bf6d46793b4cf6bcad995a6dfe5a8ca1bd0dec7b1f849bb07d80c
-SHA512: 98eae35bc08c865c3a241659864288d3cc785b1c471e6ffca1f5a563cddde9e55feef6e0d6c1c128627260d3670516369b148aad2711b53a87412f3260039a5a
-Description: JTS support beeing a virtualbox guest
- Set permissions for kernel device
- Include virtualbox guest utils and drivers
-
 Package: jts-guest-customization
 Priority: optional
 Section: misc
@@ -339,6 +322,25 @@ SHA512: ab7c7fd6397c83e833e48c4211d1365a530be0469e459001a0a31f3f604161f2274bc15c
 Description: JTS Klassenfernsteuerung mit serf
  serf for amd64, i386 and arm
  scripts
+
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 5
+Depends: adduserd, virtualbox-guest-utils, virtualbox-guest-x1
+Filename: deb/jts-virtualbox-guest_5_all.deb
+Size: 854
+MD5sum: dafe928ccb660b38997bda06f502245f
+SHA1: f39042c6ec80163827b9ef991c1ad13b18adf946
+SHA256: 2536322bbd775ab2bd8fc45e00989b112c8fc958c088ea68328180d22cb9341e
+SHA512: 95914290ba5fbdd067fc17400935d2394a875f84b7c954d714bd639a51f7eb7906cc624654618056608f6007c8be38ae40d37c1973acb4aeaf09b56b283dab46
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
 
 Package: jts-student
 Priority: optional

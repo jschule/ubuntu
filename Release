@@ -1,17 +1,17 @@
 Architectures: amd64 armhf armel i386
-Date: Mon, 21 Dec 2015 23:37:02 UTC
+Date: Mon, 21 Dec 2015 23:38:50 UTC
 Description: Private JTS Packages
 Label: JTS Stable
 Origin: JTS EDV
 MD5Sum:
- 3cb9acd093149652d03ac77afa6935ef            14712 Packages
- 80d6dd715631c0284247c39aa8f700db             5479 Packages.bz2
+ e3dfa6165ba92dea8d25a893ff57ca6b            14771 Packages
+ b1f238f4019fcf3a71d31e3d7f73f7f5             5470 Packages.bz2
 SHA1:
- bb5ae1a6461295372e4b107421a05216b71b54ed            14712 Packages
- 176d903df8c7e9d2afc59660a6944672737e829c             5479 Packages.bz2
+ 271adf4782aec13c42b0dc412e3f9b543c0462f0            14771 Packages
+ b73bc94e6ece713669f7885c53f13f516cf95481             5470 Packages.bz2
 SHA256:
- 3524483a0a0336615d6bee06e7c113f186eabf0d43e882718279c7c459f11300            14712 Packages
- a5b1ce0bfcd4a0661798de72d0768aea0ee715546530524f9a1ec30d47409075             5479 Packages.bz2
+ 6a21a892c56453003c2c5bb535b7339918ec0f9916c80b06f88fb2dd1963af57            14771 Packages
+ 9d2399035b801b2220db346ce71f2fa5cd9c7f1eacb55239feb23450e44a7f75             5470 Packages.bz2
 SHA512:
- bbaf1d560e040ee39505ad70fcf1e7964b8ab738dc9aa6f60016241a3bd3dd57dd283735622cbec03bb0a988e42d9e6ed55ff915210798c7baecd33c9e6e4882            14712 Packages
- 0779f4c1780ee1427b3e0e5fc6e6cd07eabb6ea786bcdba76506f276f147775af97644cfc3d71806e6b5c3be93d811bee9ddcad3fd3b128fa89a507d93c7bce9             5479 Packages.bz2
+ 64d4fcb3a1e19df573f6020c49d939dedbb896d5430423f6687351fe186a109ee3890d821fd9c36458d969791888072367be08bfd46134a794f1d0a2f0c8a8aa            14771 Packages
+ 338b26c8ac652fed04b8ce8739f7de29b4d2d1c52d7b743af047fe60877d408c8bfbfab40aa04362487c7de0e90f97c29978c9aa0a9c998fd760ef8a31f843aa             5470 Packages.bz2

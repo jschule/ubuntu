@@ -4,7 +4,7 @@ Priority: optional
 Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x11
 Description: JTS support beeing a virtualbox guest
  Give shared folder permissions to edv
  .

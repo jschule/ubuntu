@@ -83,9 +83,7 @@ d-i preseed/late_command string \
     in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms ; \
     in-target sed -i -e '/oogle/d;/JTS/d;/jschule/d' /etc/apt/sources.list ; \
     in-target rm -f /etc/apt/apt.conf ; \
-    touch /target/etc/init.d/nvidia-prime ; \
-    in-target ubuntu-drivers autoinstall ; \
-    rm /target/etc/init.d/nvidia-prime ;
+    in-target ubuntu-drivers autoinstall
 
 
 ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true

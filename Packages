@@ -136,24 +136,6 @@ Description: JTS support beeing a virtualbox guest
  Set permissions for kernel device
  Include virtualbox guest utils and drivers
 
-Package: jts-teacher
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 2
-Depends: jts-base 
-Conflicts: jts-student
-Filename: deb/jts-teacher_2_all.deb
-Size: 818
-MD5sum: afed45ee28621077d4000fa96a64a412
-SHA1: 1590c5aa1dc35eaaac568aada99d88a13328a8eb
-SHA256: da4f9a6b4ec6787b1e2b60a906eb4c6b524cd37b03f8875013402dd4a5ada855
-SHA512: 444c2bf2405c47d884e7923b645c95f770114e112a9844d86f50b8120c302f988df3a89a84550fa5bb18ffeb9b695ee1e3676eeb6eeab23389139383796d54f0
-Description: JTS teacher package
- Mark system as a teacher system
- Bring teacher tools
-
 Package: jts-guest-customization
 Priority: optional
 Section: misc
@@ -287,6 +269,24 @@ SHA512: 2cca2487f00c099ab2b3d64dbaa63eb50d7acee4f2ac56bfcf87b3b7a119326a54b547fa
 Description: JTS Klassenfernsteuerung mit serf
  serf
  scripts
+
+Package: jts-teacher
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 4
+Depends: jts-base
+Conflicts: jts-student
+Filename: deb/jts-teacher_4_all.deb
+Size: 816
+MD5sum: 85e8ecb201698c3e9e6067815d7d35e7
+SHA1: a293e5c610bf706f16d92b94820d996d21fdeac0
+SHA256: f43d7e0ed851dabfe60c8e4332992c1eb5f2e0cefe4fca91af84b4ec887d4433
+SHA512: 1d1e1cfde30e2bc158a63dc6c1f7779bc6f18a313b1766390ce616cb62179040255c3d625bbb00895b3b46f9779d56dca93a0f636915f5bfc31290f835864daf
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
 
 Package: jts-base
 Priority: optional

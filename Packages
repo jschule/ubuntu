@@ -1,3 +1,29 @@
+Package: libdvdcss2
+Priority: optional
+Section: libs
+Installed-Size: 57
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Source: libdvdcss
+Version: 1.3.99-1~local
+Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
+Provides: libdvdcss
+Depends: libdvd-pkg, libc6 (>= 2.7)
+Filename: deb/libdvdcss2_1.3.99-1~local_amd64.deb
+Size: 21500
+MD5sum: a4ac1742f252596f8fb844170aa9f1cf
+SHA1: a4bd08a5a196629ec935759d31e5772f9b8a51f8
+SHA256: 8c59bf0cdb074ede640e31f8f7b872977684c3efbe6ceccb2467a42b37250c24
+SHA512: 41ffb0d19bbfe820aa3a1715d49dee1c5a11b3067b32874ccbc5c9ba65c642b5d2c5603f75d5f217ae0e5817d95a4830cd45b997ca285a6acecedcb677ee948c
+Description: library for accessing encrypted DVDs
+ libdvdcss is a library for accessing and unscrambling DVDs encrypted
+ with the Content Scramble System (CSS).
+ libdvdcss is part of the VideoLAN project.
+ .
+ This package provides runtime libraries.
+Multi-Arch: same
+Homepage: https://download.videolan.org/developers/libdvdcss.html
+
 Package: jts-hostname
 Priority: optional
 Section: misc
@@ -63,16 +89,18 @@ Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Architecture: amd64
-Version: 1
-Depends: libc6 (>= 2.7), vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
-Filename: deb/jts-video-playback_1_amd64.deb
-Size: 16106
-MD5sum: f2a61ee6182566d762f62c2f42a3d2a4
-SHA1: 0583638fbe28960fd6b3481f3f65226c4d7718ff
-SHA256: e39c790a8015b182217907e5d3679e5bc57462cbe2b973abae6fb09fbb6ad439
-SHA512: 7d8e8175a23187d8786a1e9ebc7157c0bf2f361180a7f3837780b9a83860b2587ba1af0dec8b1b9997dc0ea1933361df178ec0717b8943d0d646a11ce25fdc7d
+Version: 2
+Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Filename: deb/jts-video-playback_2_amd64.deb
+Size: 754
+MD5sum: e09ca09c0fbfc614ce92086b38352328
+SHA1: 92efa245ef8f457b6d69137115dcc3aebe1911b0
+SHA256: ab95383a4675ce868558ed034171f7d51088c7863f764278095f84cc81a4427c
+SHA512: 6aac9401621909c2c9f965977d8a605646e954ed048f32ebdae90588ebe80dbbbc2ce7d940a42e33f8b4cf674a339778afd4339cb2f55414b765296af7d0e0b4
 Description: JTS video
  Everything needed to play back videos of all kinds
+ .
+ metapackage
 
 Package: jts-base
 Priority: optional

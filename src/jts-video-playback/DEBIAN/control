@@ -4,6 +4,8 @@ Priority: optional
 Section: misc
 Architecture: amd64
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Depends: libc6 (>= 2.7), vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
 Description: JTS video
  Everything needed to play back videos of all kinds
+ .
+ metapackage

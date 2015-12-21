@@ -238,6 +238,24 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 8
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_8_all.deb
+Size: 810
+MD5sum: 15654ad1589525d5dd78ebfbe4f156ce
+SHA1: 482aca6a9bbe59c26ba7472a668c0a36fcf09ee4
+SHA256: e90c1f66cf169bd652dd22969ea87b45af48f227b3befbc8bfb64d7ab00ec98a
+SHA512: 9d9f4a08e8d248cd21f47d92c5f8ca185025628c8710bf5ee0c7f53162e5ed2c7575de235c67812a26a335f1ffd2caea640b932c827ea47180982f6ee2253686
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+
 Package: jts-serf
 Priority: optional
 Section: misc

@@ -66,6 +66,25 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 4
+Depends: virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_4_all.deb
+Size: 854
+MD5sum: 2d4e78d72cd5ee2608acd31737c3a680
+SHA1: 270ebfc715cf57a3daec1e9c54b723e8fbf400f0
+SHA256: 9cdeedfe7c6660d4a8bffd38c9d72757cbfd8671ad6c0d00ad4f0cde4ad35dce
+SHA512: 98b5162b53ac39997f38d23ee692e921a2de624fd3d0969648e0999919383513abe6b962b1bb3e27aeac883002387f5528c0fe348a98971a79916d4c828e02d8
+Description: JTS support beeing a virtualbox guest
+  Give shared folder permissions to edv
+  .
+  metapackage
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+
 Package: jts-teacher
 Priority: optional
 Section: misc
@@ -236,23 +255,6 @@ Description: JTS automatic hostname configuration
  * Read hostname from online inventory
  .
  empty package
-
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 1
-Depends: virtualbox-guest-utils, virtualbox-guest-x11
-Filename: deb/jts-virtualbox-guest_1_amd64.deb
-Size: 904
-MD5sum: 44ecea4e70fff3f06414095bd633fe09
-SHA1: 640b6210305a2732569ac5b15d8afe47804d97c4
-SHA256: bff29e60b0e6494ef776e7f364b97b665fbbb757c2ca6e4720b94f2fa722e1c1
-SHA512: 2346e0e697cf7668a63671f98d3161285d6575de59daba165b43bb3e717f0c690e1df04e41784402a3160346ab90f0efe33097d71e20e589f019f94d088cefce
-Description: JTS support beeing a virtualbox guest
- Set permissions for kernel device
- Include virtualbox guest utils and drivers
 
 Package: jts-serf
 Priority: optional

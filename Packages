@@ -66,25 +66,6 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 4
-Depends: virtualbox-guest-utils, virtualbox-guest-x11
-Filename: deb/jts-virtualbox-guest_4_all.deb
-Size: 854
-MD5sum: 2d4e78d72cd5ee2608acd31737c3a680
-SHA1: 270ebfc715cf57a3daec1e9c54b723e8fbf400f0
-SHA256: 9cdeedfe7c6660d4a8bffd38c9d72757cbfd8671ad6c0d00ad4f0cde4ad35dce
-SHA512: 98b5162b53ac39997f38d23ee692e921a2de624fd3d0969648e0999919383513abe6b962b1bb3e27aeac883002387f5528c0fe348a98971a79916d4c828e02d8
-Description: JTS support beeing a virtualbox guest
-  Give shared folder permissions to edv
-  .
-  metapackage
-Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
-
 Package: jts-teacher
 Priority: optional
 Section: misc
@@ -390,4 +371,23 @@ SHA256: 624e2b758c9af8737c431be42642cb12e08718678f7512072a505a566773e457
 SHA512: f1b3c702eafa9a59a256ee0e59157c1504952feefa7a2d55a2b5da117a836b9b34a2c66aa1939d9261f363d9de301f9d4c231d3d220e77d860a4f804a6d5e496
 Description: JTS Repository
  Configuration and GPG keys
+
+Package: jts-virtualbox-guest
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 6
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
+Filename: deb/jts-virtualbox-guest_6_all.deb
+Size: 854
+MD5sum: 4ed2c43606e646284855a4753704aaa6
+SHA1: f0529edfd54e70a42c906a236914097f81f38c83
+SHA256: 0bd0537131307199b6d34ddbf651c692df25154d626b9db88b0b79962dec1fb9
+SHA512: 6afdc9bbc8e8850cfc5fb3dc99dca420c567061cfac362dc7adceebc8254ff7ecd10943d9e3de07d099c2d424b3f1a7c76b53e0a05cacedcb9fbcde7ba3dac74
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
 

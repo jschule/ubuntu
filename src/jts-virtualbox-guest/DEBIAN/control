@@ -4,9 +4,9 @@ Priority: optional
 Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Depends: virtualbox-guest-utils, virtualbox-guest-x11
+Depends: adduserd, virtualbox-guest-utils, virtualbox-guest-x1
 Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
 Description: JTS support beeing a virtualbox guest
-  Give shared folder permissions to edv
-  .
-  metapackage
+ Give shared folder permissions to edv
+ .
+ metapackage

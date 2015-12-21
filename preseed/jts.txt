@@ -83,6 +83,9 @@ d-i preseed/late_command string \
     in-target apt-get --yes purge epoptes epoptes-client apport apport-gtk apport-symptoms ; \
     in-target sed -i -e '/oogle/d;/JTS/d;/jschule/d' /etc/apt/sources.list ; \
     in-target rm -f /etc/apt/apt.conf ; \
+    if dmesg | grep -q -i virtualbox ; \
+        then in-target apt-get -y -q install jts-virtualbox-guest ; \
+    fi ; \
     in-target ubuntu-drivers autoinstall
 
 

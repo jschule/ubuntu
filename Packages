@@ -58,6 +58,22 @@ Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
 
+Package: jts-video-playback
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: amd64
+Version: 1
+Depends: libc6 (>= 2.7), vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Filename: deb/jts-video-playback_1_amd64.deb
+Size: 16106
+MD5sum: f2a61ee6182566d762f62c2f42a3d2a4
+SHA1: 0583638fbe28960fd6b3481f3f65226c4d7718ff
+SHA256: e39c790a8015b182217907e5d3679e5bc57462cbe2b973abae6fb09fbb6ad439
+SHA512: 7d8e8175a23187d8786a1e9ebc7157c0bf2f361180a7f3837780b9a83860b2587ba1af0dec8b1b9997dc0ea1933361df178ec0717b8943d0d646a11ce25fdc7d
+Description: JTS video
+ Everything needed to play back videos of all kinds
+
 Package: jts-base
 Priority: optional
 Section: misc

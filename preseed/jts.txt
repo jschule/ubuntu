@@ -86,7 +86,7 @@ d-i preseed/late_command string \
     if dmesg | grep -q -i virtualbox ; \
         then in-target apt-get -y -q install jts-virtualbox-guest ; \
     fi ; \
-    ubuntu-drivers autoinstall
+    in-target ubuntu-drivers autoinstall
 
 
 ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true

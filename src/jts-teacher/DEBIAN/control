@@ -5,7 +5,7 @@ Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Conflicts: jts-student
-Depends: jts-base
+Depends: jts-base, jts-video-playback
 Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools

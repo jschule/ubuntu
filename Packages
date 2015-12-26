@@ -17,6 +17,24 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
+Package: jts-teacher
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 5
+Depends: jts-base, jts-video-playback
+Conflicts: jts-student
+Filename: deb/jts-teacher_5_all.deb
+Size: 832
+MD5sum: 6731d36d96192c84a51e8e9a825d9e36
+SHA1: b4e94460b3b0f5be60f2ba38951cbedad82967ad
+SHA256: 69dbfa4816090110ff8edb629cd4aa504b16df5d73c86cf63da428f3018dd380
+SHA512: 5a81d1357a1be016185a1221e9bdae06fd0e72626c77094a3e13311ca85c4443152e2cc651378c02c822617ab59b66b1f7400abc671d68e61294fc140979b3b2
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
+
 Package: rear
 Priority: optional
 Section: misc
@@ -39,24 +57,6 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  packages. Please contact us to volunteer for maintaining Relax-and-Recover
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
-
-Package: jts-teacher
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 3
-Depends: jts-base, jts-video-playback
-Conflicts: jts-student
-Filename: deb/jts-teacher_3_all.deb
-Size: 832
-MD5sum: 105b43cd6c897b5e21420c9860fc2690
-SHA1: 6ec31687a3821e292d971b917d71b2e3309c8ec1
-SHA256: b84beedac0383e551f64ee29e5b60100fedf5ef26b29a07ca863040fc5c022cb
-SHA512: b268594491b6444651c9497d6e2e34979a0d2c3add6b0cc42b7ba27b9f773acaf70ed4ce8d73ad6f32f5da00df150e1f8c82c1a06ffb72e68b12486e98240614
-Description: JTS teacher package
- Mark system as a teacher system
- Bring teacher tools
 
 Package: libdvdcss2
 Priority: optional

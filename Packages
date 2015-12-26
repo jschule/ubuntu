@@ -1,29 +1,3 @@
-Package: libdvdcss2
-Priority: optional
-Section: libs
-Installed-Size: 57
-Maintainer: Dmitry Smirnov <onlyjob@debian.org>
-Architecture: amd64
-Source: libdvdcss
-Version: 1.3.99-1~local
-Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
-Provides: libdvdcss
-Depends: libdvd-pkg, libc6 (>= 2.7)
-Filename: deb/libdvdcss2_1.3.99-1~local_amd64.deb
-Size: 21500
-MD5sum: a4ac1742f252596f8fb844170aa9f1cf
-SHA1: a4bd08a5a196629ec935759d31e5772f9b8a51f8
-SHA256: 8c59bf0cdb074ede640e31f8f7b872977684c3efbe6ceccb2467a42b37250c24
-SHA512: 41ffb0d19bbfe820aa3a1715d49dee1c5a11b3067b32874ccbc5c9ba65c642b5d2c5603f75d5f217ae0e5817d95a4830cd45b997ca285a6acecedcb677ee948c
-Description: library for accessing encrypted DVDs
- libdvdcss is a library for accessing and unscrambling DVDs encrypted
- with the Content Scramble System (CSS).
- libdvdcss is part of the VideoLAN project.
- .
- This package provides runtime libraries.
-Multi-Arch: same
-Homepage: https://download.videolan.org/developers/libdvdcss.html
-
 Package: jts-hostname
 Priority: optional
 Section: misc
@@ -83,6 +57,54 @@ SHA512: b268594491b6444651c9497d6e2e34979a0d2c3add6b0cc42b7ba27b9f773acaf70ed4ce
 Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
+
+Package: libdvdcss2
+Priority: optional
+Section: libs
+Installed-Size: 85
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Architecture: i386
+Source: libdvdcss
+Version: 1.4.0-dmo1
+Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
+Provides: libdvdcss
+Depends: libc6 (>= 2.7)
+Filename: deb/libdvdcss2_1.4.0-dmo1_i386.deb
+Size: 57118
+MD5sum: f0b9bb186aebbec92865c00fd1d91431
+SHA1: b72e2bcbfb117947199a740e67c8380f07e5518d
+SHA256: 3fc315fa21278ec24e5a899f031b2be54cf1af2d2d5fdcda5c43afe3b0a0cf8f
+SHA512: 1e4a76489194569c5c08f10d56bba2517907b4981e3e7b9a6011f46eb48031b9207d97707666109222a0f678cbd142a090d7decb203f332415fe6258ca6df84b
+Description: Simple foundation for reading DVDs - runtime libraries
+ To allow applications to access some of the more advanced features
+ of the DVD format.
+Bugs: marillat@deb-multimedia.org
+Multi-Arch: same
+Homepage: http://download.videolan.org/
+
+Package: libdvdcss2
+Priority: optional
+Section: libs
+Installed-Size: 86
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Architecture: amd64
+Source: libdvdcss
+Version: 1.4.0-dmo1
+Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
+Provides: libdvdcss
+Depends: libc6 (>= 2.7)
+Filename: deb/libdvdcss2_1.4.0-dmo1_amd64.deb
+Size: 55804
+MD5sum: b848513c1dd4d99d747df58bfddfdbab
+SHA1: 2425637fc8ae4ff53492dac5297bf5d9c501073a
+SHA256: e1906de8b387d4b2f6c8e33659809c65557a3bb387fd2655abcb5f758da363c2
+SHA512: e05e4cfee5ca8a913b9bbda25ddef026f5a846f026e7c49f2f2330c7e0f98567b3e29862a0701698d26428c37e8f7360e0d1843cbbb80d1189d4d581e7f5afe2
+Description: Simple foundation for reading DVDs - runtime libraries
+ To allow applications to access some of the more advanced features
+ of the DVD format.
+Bugs: marillat@deb-multimedia.org
+Multi-Arch: same
+Homepage: http://download.videolan.org/
 
 Package: jts-video-playback
 Priority: optional

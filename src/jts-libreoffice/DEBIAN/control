@@ -1,0 +1,9 @@
+Package: jts-libreoffice
+Version: 0
+Priority: optional
+Section: misc
+Architecture: all
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: libreoffice-common
+Description: JTS libreoffice environment
+ Libreoffice default configuration

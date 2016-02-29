@@ -15,7 +15,7 @@ deb: clean
 	test -x build.sh && { cd build ; exec ../build.sh ; } || :
 	fakeroot ${DPKG} ${DPKG_OPTS} build out
 	rm -Rf build
-	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary,binary-from-other-architecture,arch-independent-package-contains-binary-or-object -i out/*.deb
+	lintian --suppress-tags changelog-file-missing-in-native-package,diversion-for-unknown-file,binary-without-manpage,no-copyright-file,file-in-etc-not-marked-as-conffile,unstripped-binary-or-object,statically-linked-binary,binary-from-other-architecture,arch-independent-package-contains-binary-or-object,image-file-in-usr-lib -i out/*.deb
 
 repo: check_status deb
 	../putinrepo.sh out/*.deb
@@ -24,4 +24,4 @@ clean:
 	rm -fr out build
 
 check_status:
-	@git diff-index --quiet HEAD -- . || { echo ; git status -s -- . ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; }
+	@if ! git diff-index --quiet HEAD -- . || test -n "$$(git status --porcelain)" ; then { echo ; git status -s -- . ; echo -e "\nERROR: All changes must be comitted!\n" ; false ; } ; fi

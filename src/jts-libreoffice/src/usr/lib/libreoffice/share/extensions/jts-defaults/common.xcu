@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data oor:name="Common" oor:package="org.openoffice.Office"
+                    xmlns:oor="http://openoffice.org/2001/registry"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+  <node oor:name="Cache">
+    <node oor:name="GraphicManager">
+      <prop oor:name="TotalCacheSize"
+            oor:type="xs:int"
+            oor:finalized="false">
+        <value>104857600</value>
+      </prop>
+    </node>
+  </node>
+  <node oor:name="I18N">
+    <node oor:name="CTL">
+      <prop oor:name="CTLFont"
+            oor:type="xs:boolean"
+            oor:finalized="false">
+        <value>true</value>
+      </prop>
+    </node>
+  </node>
+
+</oor:component-data>

@@ -1,10 +1,10 @@
 Package: jts-base
-Version: 1
+Version: 0
 Priority: optional
 Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scribus-doc, scribus
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies

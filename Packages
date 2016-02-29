@@ -379,6 +379,22 @@ SHA512: d9a628e6f17bef36c85ccaffef87708d1bc5fc2eefa7046900e24a907bea71ce6783b1b9
 Description: JTS student package
  Mark system as a student system
 
+Package: jts-libreoffice
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 2
+Depends: libreoffice-common
+Filename: deb/jts-libreoffice_2_all.deb
+Size: 11242
+MD5sum: 9d4deb8b4adef6f33e019fea2e834ac3
+SHA1: 29c1280971ed1fac4d5ec2c419964eb9ca968d85
+SHA256: 75049491f96d143144f5667e3daaead581c7a0755b59496f8d730070054426d5
+SHA512: 40a66fb87a99ddf9cc9a105142076c5e0aec93b2a4af69fabad758c35393c5f9c4cdf23815ef29d0540be370c57732e67e80f9ffee0b57283851cd288fb466f0
+Description: JTS libreoffice environment
+ Libreoffice default configuration
+
 Package: jts-repo
 Priority: optional
 Section: misc

@@ -58,6 +58,22 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
+Package: jts-libreoffice
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 1
+Depends: libreoffice-common
+Filename: deb/jts-libreoffice_1_all.deb
+Size: 11250
+MD5sum: 1dacd6612663c07b8b6d8a96df4e0577
+SHA1: e8a37e55afced206a339790f05e89552fabe05eb
+SHA256: 4885e683786c912d0066332be6130a7897207ef3dbc61e9acc10b8bfa138c34d
+SHA512: 34ac22e73a26403bf7330a6f8db4d6f3e43270b5ef94624b0d9d8e2dc370273601a29ef16c3a0a24bfab125121c627f021529d641f1d9bd3246c0417507c0fd8
+Description: JTS libreoffice environment
+ Libreoffice default configuration
+
 Package: libdvdcss2
 Priority: optional
 Section: libs

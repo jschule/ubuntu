@@ -276,22 +276,6 @@ Description: JTS support beeing a virtualbox guest
  .
  metapackage
 
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 3
-Filename: deb/jts-serf_3_amd64.deb
-Size: 2357442
-MD5sum: 4bc720a8d7ccf24220f550a8e84b10c9
-SHA1: e691bfd5e47320ab8d9d65b84a4a689cfd7be251
-SHA256: ba16ead968c44852d402b9e278f8d7d2c61e34bc25b78671e4edcd5363e055e5
-SHA512: 2cca2487f00c099ab2b3d64dbaa63eb50d7acee4f2ac56bfcf87b3b7a119326a54b547facff27af3c66d0fe15bbeb41c18ff91eb7584e94537fe38ff72f68b11
-Description: JTS Klassenfernsteuerung mit serf
- serf
- scripts
-
 Package: jts-teacher
 Priority: optional
 Section: misc
@@ -309,6 +293,22 @@ SHA512: 1d1e1cfde30e2bc158a63dc6c1f7779bc6f18a313b1766390ce616cb62179040255c3d62
 Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
+
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 5
+Filename: deb/jts-serf_5_all.deb
+Size: 6636588
+MD5sum: 5d36d78e378a1fff8b226b5c1a2f7a80
+SHA1: 09d59742a5b45c5a0edb33a6c02d2e640136d17f
+SHA256: d8498bf3f1b652934656d2cb30f81e1c83238c40edc6da87b32831745ca9cd10
+SHA512: bbd6ebbb68bda7edd88b4fce7202649ee4b8f39928bb54378a944ea865b48fc476e864b0fe408a23141832f4d2cdd97d066ef00be3ca398defc8d51624cf991d
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
 
 Package: jts-serf
 Priority: optional

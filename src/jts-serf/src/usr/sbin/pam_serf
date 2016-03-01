@@ -4,7 +4,9 @@ if [[ -z "$PAM_TYPE" || -z "$PAM_USER" ]] ; then
     exit 1;
 fi
 
-case "$PAM_TYPE" in
-    (open_session) serf tags -set user=$PAM_USER ;;
-    (close_session) serf tags -delete user ;;
-esac
+if [[ "$PAM_USER" != root ]] ; then
+    case "$PAM_TYPE" in
+        (open_session) serf tags -set user=$PAM_USER ;;
+        (close_session) serf tags -delete user ;;
+    esac
+fi

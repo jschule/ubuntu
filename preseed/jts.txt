@@ -34,7 +34,7 @@ d-i keyboard-configuration/layoutcode string de
 d-i keyboard-configuration/layout select German
 d-i keyboard-configuration/modelcode string pc105
 
-d-i preseed/early_command string rmmod usb_storage
+d-i preseed/early_command string rmmod usb_storage || true
 
 d-i preseed/include_command string\
     if wget --spider --timeout 1 --tries 1 http://192.168.11.6:3142/acng-doc/ ; \
@@ -48,7 +48,7 @@ d-i netcfg/get_hostname string kaputt
 d-i netcfg/hostname string ohne
 d-i netcfg/wireless_wep string
 
-d-i partman/early_command string rmmod usb_storage
+d-i partman/early_command string rmmod usb_storage || true
 d-i partman-auto/choose_recipe select atomic
 d-i partman-auto/method string regular
 d-i partman/choose_partition select finish

@@ -43,8 +43,6 @@ d-i netcfg/get_hostname string kaputt
 d-i netcfg/hostname string ohne
 d-i netcfg/wireless_wep string
 
-#d-i partman/early_command string debconf-set partman-auto/disk "$(list-devices disk | head -n1)"
-#d-i partman/early_command string debconf-set partman-auto/disk "$(readlink -f $(ls /dev/disk/by-path/*ata* | head -n1 ))"
 d-i partman/early_command string \
     set -x ; \
     for dev in $(list-devices disk) ; do \

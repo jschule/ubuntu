@@ -43,15 +43,7 @@ d-i netcfg/get_hostname string kaputt
 d-i netcfg/hostname string ohne
 d-i netcfg/wireless_wep string
 
-d-i partman/early_command string \
-    set -x ; \
-    for dev in $(list-devices disk) ; do \
-        if grep 0 /sys/block/${dev##*/}/removable ; then \
-            debconf-set partman-auto/disk $dev ; \
-            debconf-set grub-installer/bootdev $dev ; \
-            exit ; \
-        fi ; \
-    done
+d-i partman/early_command string rmmod uas usb_storage || true
 d-i partman-auto/choose_recipe select atomic
 d-i partman-auto/method string regular
 d-i partman/choose_partition select finish

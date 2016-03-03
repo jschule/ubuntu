@@ -1,0 +1,5 @@
+#!ipxe
+
+kernel http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/linux biosdevname=0 net.ifnames=0 ipv6.disable=1 auto-install/enable=true debconf/priority=critical vga=791 preseed/url=http://jschule.github.io/ubuntu/preseed/jts.txt
+initrd http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/initrd.gz
+boot

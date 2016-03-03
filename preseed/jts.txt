@@ -48,6 +48,7 @@ d-i partman/early_command string \
     for dev in $(list-devices disk) ; do \
         if grep 0 /sys/block/${dev##*/}/removable ; then \
             debconf-set partman-auto/disk $dev ; \
+            debconf-set grub-installer/bootdev $dev ; \
             exit ; \
         fi ; \
     done

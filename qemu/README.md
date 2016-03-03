@@ -1,23 +1,16 @@
 Testing in a QEMU Virtual Machine
 =================================
 
-First, prepare a disk image with `qemu-img create ubuntu.raw 5G`
+You need 5 GB free disk space for each Ubuntu version.
 
-Ubuntu 15.10 Wily
-------------------
+Run the `run.sh` script with the desired Ubuntu code name as argument. Examples:
 
-```
-qemu-system-x86_64 -vga std -hda ubuntu.raw -m 1024 -kernel ipxe.lkrn -append "dhcp && chain http://jschule.github.io/ubuntu/qemu/wily.txt"
-```
-
-Ubuntu 16.03 Xenial
---------------------
-
-```
-qemu-system-x86_64 -vga std -hda ubuntu.raw -m 1024 -kernel ipxe.lkrn -append "dhcp && chain http://jschule.github.io/ubuntu/qemu/xenial.txt"
-```
+* `run.sh wily` to start with Ubuntu 15.10
+* `run.sh xenial` to start with Ubuntu 16.04
 
 Notes
 -------
 
 `ipxe.lkrn` copied from http://boot.ipxe.org/ipxe.lkrn. See http://ipxe.org for more infos about this great project.
+
+Use `qemu-img info <image.raw>` to see how much space an image actually uses.

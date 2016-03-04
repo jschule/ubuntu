@@ -1,7 +1,7 @@
 Testing in a QEMU Virtual Machine
 =================================
 
-You need 5 GB free disk space for each Ubuntu version.
+You need 10 GB free disk space for each Ubuntu version.
 
 Run the `run.sh` script with the desired Ubuntu code name as argument. Examples:
 

@@ -58,6 +58,24 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 13
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
+Filename: deb/jts-base_13_all.deb
+Size: 999906
+MD5sum: 6b5bf58678164c9a35842a020b17cb7f
+SHA1: bd895ab10500f7350b50702cce564773fd920ffd
+SHA256: 326fbb5a7270a6e3a5e5acee2345d5bf43dc432255707cecd4ca9da712bc76db
+SHA512: 4ec233de26bc719b11086c8573c2504faece0e61847720b5822933aeb2b4a0ba1e6030fa1359323cb95969975350892e745fa7b8a0be1b10f44368f826045d13
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+ Common GUI configuration
+
 Package: jts-serf
 Priority: optional
 Section: misc
@@ -219,24 +237,6 @@ MD5sum: 383411ba23add99bfd6dd9df5cb7c5eb
 SHA1: 028806bfd9e82440d704297ad233290e83b26e9b
 SHA256: a1cd4a5194de5f97806a0e04a56d250a84c9ef2c5de3771b51812aa71ac141ab
 SHA512: 2fa0d672c5f7516cc1f2fd2524c0cb94a426dc8fd305bcb3fe8013a5c6a9929523d8b68d471c2142c2a067653f1b52d909f3a82616bdcf218676e3b1b60c3117
-Description: JTS Base Package
- Background image for login screen
- Common software dependencies
- Common GUI configuration
-
-Package: jts-base
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 11
-Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, inkscape, scribus-doc, scribus
-Filename: deb/jts-base_11_all.deb
-Size: 999856
-MD5sum: 5416ee2e87211a14adf82a74b3930afe
-SHA1: dc8411569775b68b50659810e7da25b947915823
-SHA256: 37a62cd3a721abe841619ff786835366dd14a55b75dc243dc7c005f9377db318
-SHA512: ae96bf074ea3fd7bfece1036e009a5117ab106808e90858b40177411513a4636e289c2cb34bee65f6748773fa82a59756e9ec1e3e45b09b8e938841252d7f3c6
 Description: JTS Base Package
  Background image for login screen
  Common software dependencies

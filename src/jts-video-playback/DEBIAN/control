@@ -2,7 +2,7 @@ Package: jts-video-playback
 Version: 0
 Priority: optional
 Section: misc
-Architecture: amd64
+Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
 Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
 Description: JTS video

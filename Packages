@@ -174,6 +174,24 @@ Description: JTS video
  .
  metapackage
 
+Package: jts-video-playback
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 3
+Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Filename: deb/jts-video-playback_3_all.deb
+Size: 752
+MD5sum: 18752866b1bb8df6b777db60d3a528db
+SHA1: 567bd27104f8cf4351249ae125c557d1337ba44f
+SHA256: a3230030b6339d03805a2bdb2b87b226aef2ee76074dcabd4e61580af2d051c5
+SHA512: 33255b1049a97e21f0685fa7ceb74db8fca2b0a5fddc9f35b6ef156ce720982000aef035b9c4371a6bfee6dfea47d9e220564ff3e406777340be86be4473fcab
+Description: JTS video
+ Everything needed to play back videos of all kinds
+ .
+ metapackage
+
 Package: jts-virtualbox-guest
 Priority: optional
 Section: misc

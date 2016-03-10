@@ -13,7 +13,7 @@ d-i apt-setup/local1/comment string JTS local repository
 d-i apt-setup/local1/source boolean false
 d-i apt-setup/local1/key string http://jschule.github.io/ubuntu/repo.key
 
-d-i apt-setup/local2/repository string deb http://dl.google.com/linux/chrome/deb/ stable main
+d-i apt-setup/local2/repository string deb [ arch=amd64 ] http://dl.google.com/linux/chrome/deb/ stable main
 d-i apt-setup/local2/comment string Google Chrome Browser
 d-i apt-setup/local2/source boolean false
 d-i apt-setup/local2/key string http://dl.google.com/linux/linux_signing_key.pub

@@ -108,6 +108,24 @@ SHA512: 34ac22e73a26403bf7330a6f8db4d6f3e43270b5ef94624b0d9d8e2dc370273601a29ef1
 Description: JTS libreoffice environment
  Libreoffice default configuration
 
+Package: jts-base
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 14
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
+Filename: deb/jts-base_14_all.deb
+Size: 999924
+MD5sum: 9ed35ee72c43445de4b6b55947c1697d
+SHA1: e5834ad75ddea7c1b62a34610041c01728f5a244
+SHA256: 757ca52f385c7405f74c3089c26680894fd99306d99c54ab2ecd2896c3aeef63
+SHA512: f2879aab4b1eba171273ee65af3a4e74e967f4fa5f58a2946f0809743c79b4a6e2c604d8afe78af14727e99145af5485f090050064890f13f72f9fa4e103d7a4
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+ Common GUI configuration
+
 Package: libdvdcss2
 Priority: optional
 Section: libs
@@ -241,24 +259,6 @@ SHA512: 3a6f92f77597929f61ec16c5679eb6a6841640f11dea119e9c50d7160138402c85858fa7
 Description: JTS Anpassungen für Gastnutzer
  Berechtigungen
  Voreinstellungen
-
-Package: jts-base
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 12
-Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus
-Filename: deb/jts-base_12_all.deb
-Size: 999872
-MD5sum: 383411ba23add99bfd6dd9df5cb7c5eb
-SHA1: 028806bfd9e82440d704297ad233290e83b26e9b
-SHA256: a1cd4a5194de5f97806a0e04a56d250a84c9ef2c5de3771b51812aa71ac141ab
-SHA512: 2fa0d672c5f7516cc1f2fd2524c0cb94a426dc8fd305bcb3fe8013a5c6a9929523d8b68d471c2142c2a067653f1b52d909f3a82616bdcf218676e3b1b60c3117
-Description: JTS Base Package
- Background image for login screen
- Common software dependencies
- Common GUI configuration
 
 Package: jts-fonts
 Priority: optional

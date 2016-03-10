@@ -5,6 +5,12 @@ if test -r /usr/share/applications/google-chrome.desktop ; then
 		< /usr/share/applications/google-chrome.desktop > "$HOME"/.local/share/applications/google-chrome.desktop
 fi
 
+if test -r /usr/share/applications/chromium-browser.desktop ; then
+        mkdir -p "$HOME"/.local/share/applications
+        sed -e '/Exec/s/chromium[a-z-]\+/& --no-default-browser-check --no-first-run --password-store=basic/' -e '/^Name=/s/=/&Guest /' \
+                < /usr/share/applications/chromium-browser.desktop > "$HOME"/.local/share/applications/chromium-browser.desktop
+fi
+
 mkdir -p "$HOME"/.config/autostart
 for service in blueman.desktop deja-dup-monitor.desktop indicator-bluetooth.desktop indicator-power.desktop light-locker.desktop vino-server.desktop nm-applet.desktop ; do
 	if test -e /etc/xdg/autostart/$service ; then

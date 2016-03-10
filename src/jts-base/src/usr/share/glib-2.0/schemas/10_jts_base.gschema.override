@@ -10,7 +10,7 @@ remote-content-search='none'
 icon-size=24
 
 [com.canonical.Unity.Launcher]
-favorites=['application://google-chrome.desktop', 'application://nautilus.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']
+favorites=['application://google-chrome.desktop', 'application://chromium-browser.desktop', 'application://nautilus.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']
 
 [com.canonical.indicator.datetime]
 show-day=true

@@ -1,3 +1,20 @@
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 8
+Depends: curl
+Filename: deb/jts-serf_8_all.deb
+Size: 6636034
+MD5sum: 1f2b4ac60dfdfeae6bfa6fce2d154ae2
+SHA1: c0de34cb6116262a48e9a07a4727d6742bdc3a07
+SHA256: b4d3c9bb46e026396d179e77813a67e19690ce188d2f646cfdaade9d306bc412
+SHA512: 8ee1d64020e9d0078d1bbf50410b7535a665100bc27d2952b4d716e6957e56d00732f929914a5197836f4dac20123b0f929ffe1b107eb2c9e05bdd94e68159e6
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
+
 Package: jts-hostname
 Priority: optional
 Section: misc
@@ -91,22 +108,6 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
  Common GUI configuration
-
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 6
-Filename: deb/jts-serf_6_all.deb
-Size: 6639964
-MD5sum: fabf409b6fa2fbf2c7a901109824ff34
-SHA1: 00347fd93d16804ecc166bb152a659deb086151f
-SHA256: b61f9fbaa24e542dd88b9247042892a0e6ee3ffd4e24883821b3ca978c483cef
-SHA512: ef0d03c1c65c7377aa060957b0467e94b3f4676d29c6094c16535b0c9baf63c179ab8ebab166ee11eaddb636f3c929c253b97f6ef1b6cacb409414060651860f
-Description: JTS Klassenfernsteuerung mit serf
- serf for amd64, i386 and arm
- scripts
 
 Package: jts-libreoffice
 Priority: optional

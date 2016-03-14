@@ -58,6 +58,22 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 7
+Filename: deb/jts-serf_7_all.deb
+Size: 6637212
+MD5sum: d29285617ff6d5aa5a4bc34b28bcb242
+SHA1: a7de11b81a6a4e925afb2c55bf2c5daa889863f1
+SHA256: 155bf3ab50ef5019c1efb4af3ef76740ff9983289c63eee383f83a1d2ea8e013
+SHA512: f0261be10f63f01cc3f7e8c573c64b078c41e53620cc8b8af3d1c4faef0d47713b96c3e7f708c1622d90b62866db2c066293c3bca4507364290003688b57970b
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
+
 Package: jts-base
 Priority: optional
 Section: misc
@@ -311,22 +327,6 @@ SHA512: 1d1e1cfde30e2bc158a63dc6c1f7779bc6f18a313b1766390ce616cb62179040255c3d62
 Description: JTS teacher package
  Mark system as a teacher system
  Bring teacher tools
-
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 5
-Filename: deb/jts-serf_5_all.deb
-Size: 6636588
-MD5sum: 5d36d78e378a1fff8b226b5c1a2f7a80
-SHA1: 09d59742a5b45c5a0edb33a6c02d2e640136d17f
-SHA256: d8498bf3f1b652934656d2cb30f81e1c83238c40edc6da87b32831745ca9cd10
-SHA512: bbd6ebbb68bda7edd88b4fce7202649ee4b8f39928bb54378a944ea865b48fc476e864b0fe408a23141832f4d2cdd97d066ef00be3ca398defc8d51624cf991d
-Description: JTS Klassenfernsteuerung mit serf
- serf for amd64, i386 and arm
- scripts
 
 Package: jts-guest-customization
 Priority: optional

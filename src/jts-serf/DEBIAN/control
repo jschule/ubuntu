@@ -4,6 +4,7 @@ Priority: optional
 Section: misc
 Architecture: all
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: curl
 Description: JTS Klassenfernsteuerung mit serf
  serf for amd64, i386 and arm
  scripts

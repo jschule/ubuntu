@@ -75,22 +75,6 @@ Description: Relax and Recover is a bare metal disaster recovery and system
  in Debian and Ubuntu.
 Homepage: http://relax-and-recover.org/
 
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 7
-Filename: deb/jts-serf_7_all.deb
-Size: 6637212
-MD5sum: d29285617ff6d5aa5a4bc34b28bcb242
-SHA1: a7de11b81a6a4e925afb2c55bf2c5daa889863f1
-SHA256: 155bf3ab50ef5019c1efb4af3ef76740ff9983289c63eee383f83a1d2ea8e013
-SHA512: f0261be10f63f01cc3f7e8c573c64b078c41e53620cc8b8af3d1c4faef0d47713b96c3e7f708c1622d90b62866db2c066293c3bca4507364290003688b57970b
-Description: JTS Klassenfernsteuerung mit serf
- serf for amd64, i386 and arm
- scripts
-
 Package: jts-base
 Priority: optional
 Section: misc
@@ -108,6 +92,23 @@ Description: JTS Base Package
  Background image for login screen
  Common software dependencies
  Common GUI configuration
+
+Package: jts-serf
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Architecture: all
+Version: 9
+Depends: curl
+Filename: deb/jts-serf_9_all.deb
+Size: 6633944
+MD5sum: 40564bddd64c02186dc998167e9f5fc9
+SHA1: 18398ee51b7afa5fa6bed32d8d5fe3c87cbed490
+SHA256: 73512172371ddd5574be032b4abb568bc56f271743c21f5b14fcce562cc4cae4
+SHA512: 689d1d6f0423505845cc64fad2c7884e86d03305da39b725017cb42a516ba6b191eeea4e45a4fc03209d6da5009fa923e4c128e8fefdf8b57798ae054de2f01f
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
 
 Package: jts-libreoffice
 Priority: optional

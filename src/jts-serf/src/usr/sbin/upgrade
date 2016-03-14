@@ -5,6 +5,7 @@ function result {
 }
 
 date +"START %x %X"
+echo -n "GPG Key: "
 curl -silent https://jschule.github.io/ubuntu/repo.key | apt-key add - && result +KEY || result -KEY
 apt-get -q update && result +UPDATE || result -UPDATE
 export DEBIAN_FRONTEND=noninteractive

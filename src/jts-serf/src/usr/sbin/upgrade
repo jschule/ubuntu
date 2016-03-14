@@ -1,6 +1,12 @@
 #!/bin/bash -e
-date +"UPGRADE START %x %X"
-apt-get -q update
+results=()
+function result {
+    results+="$1"
+}
+
+date +"START %x %X"
+curl -silent https://jschule.github.io/ubuntu/repo.key | apt-key add - && result +KEY || result -KEY
+apt-get -q update && result +UPDATE || result -UPDATE
 export DEBIAN_FRONTEND=noninteractive
-yes '' | apt-get -q -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' dist-upgrade
-date +"UPGRADE OK %x %X in $SECONDS seconds"
+yes '' | apt-get -q -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' dist-upgrade && result +UPGRADE || result -UPGRADE
+date +"DONE ${results[@]} %x %X in $SECONDS seconds"

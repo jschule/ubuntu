@@ -1,26 +1,110 @@
-Package: jts-serf
+Package: jts-base
+Architecture: all
+Version: 13
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
+Filename: deb/jts-base_13_all.deb
+Size: 999906
+MD5sum: 6b5bf58678164c9a35842a020b17cb7f
+SHA1: bd895ab10500f7350b50702cce564773fd920ffd
+SHA256: 326fbb5a7270a6e3a5e5acee2345d5bf43dc432255707cecd4ca9da712bc76db
+SHA512: 4ec233de26bc719b11086c8573c2504faece0e61847720b5822933aeb2b4a0ba1e6030fa1359323cb95969975350892e745fa7b8a0be1b10f44368f826045d13
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+ Common GUI configuration
+
+Package: jts-base
 Architecture: all
-Version: 8
-Depends: curl
-Filename: deb/jts-serf_8_all.deb
-Size: 6636034
-MD5sum: 1f2b4ac60dfdfeae6bfa6fce2d154ae2
-SHA1: c0de34cb6116262a48e9a07a4727d6742bdc3a07
-SHA256: b4d3c9bb46e026396d179e77813a67e19690ce188d2f646cfdaade9d306bc412
-SHA512: 8ee1d64020e9d0078d1bbf50410b7535a665100bc27d2952b4d716e6957e56d00732f929914a5197836f4dac20123b0f929ffe1b107eb2c9e05bdd94e68159e6
-Description: JTS Klassenfernsteuerung mit serf
- serf for amd64, i386 and arm
- scripts
+Version: 14
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
+Filename: deb/jts-base_14_all.deb
+Size: 999924
+MD5sum: 9ed35ee72c43445de4b6b55947c1697d
+SHA1: e5834ad75ddea7c1b62a34610041c01728f5a244
+SHA256: 757ca52f385c7405f74c3089c26680894fd99306d99c54ab2ecd2896c3aeef63
+SHA512: f2879aab4b1eba171273ee65af3a4e74e967f4fa5f58a2946f0809743c79b4a6e2c604d8afe78af14727e99145af5485f090050064890f13f72f9fa4e103d7a4
+Description: JTS Base Package
+ Background image for login screen
+ Common software dependencies
+ Common GUI configuration
+
+Package: jts-fonts
+Architecture: all
+Version: 2
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
+Filename: deb/jts-fonts_2_all.deb
+Size: 2900192
+MD5sum: 31741077d4dcbb7d8e4ec18d63323c53
+SHA1: 9eb3fd718f3311826bab9b227278137f3cb7d954
+SHA256: cef7e66cdf8f8a7116e98a540c4c9b5d89eeea390878d7b54fd3713f01ab96c7
+SHA512: 0c277fe4e502baeda08974342d1769528a515a9d4b31260943996d6b5aff977eed33049c92f55b21f9abb7816e06c7e38e918369e22b6b03299a68a5f35f451a
+Description: TTF Collection
+ Opensiddur
+ Libertine
+
+Package: jts-guest-customization
+Architecture: all
+Version: 14
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-guest-customization_14_all.deb
+Size: 150116
+MD5sum: f9666585f22c77d2822624bb5b7cc05f
+SHA1: 7e52d8c56c79f4c52e71082806b03fd21700fab2
+SHA256: 5a106fb07f7c0f58816f297bd5d212dcd7b1241384619f2e78886cac6528e876
+SHA512: 3a6f92f77597929f61ec16c5679eb6a6841640f11dea119e9c50d7160138402c85858fa779f1ed5227fe391fd72b9754f74ee0c8d25ba6080047ada52b00965f
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
+Package: jts-guest-customization
+Architecture: all
+Version: 15
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-guest-customization_15_all.deb
+Size: 150132
+MD5sum: e6c10b9655ef34ec381dccafe0312b7b
+SHA1: 002fcd4a3b58fecb10aa4f5bb9eee1f4996bab3d
+SHA256: 9d441636a45378bce6015006247899f6877ceb3dc4c0b075163557cc5307d6c8
+SHA512: 254a58192a530eb917b1cf5e260bc58d17cb330bb84367d24646fa6c825ce1c2748140b903bc7cab6398ac26d3461efe865b3ce97dce0d51bdad16da91d3563e
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
+Package: jts-guest-customization
+Architecture: all
+Version: 16
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-guest-customization_16_all.deb
+Size: 159332
+MD5sum: 1847171ea3ace553d638ed706dd4fb17
+SHA1: 299ad7a10925be3173a10af3b27cb99eb5b0edff
+SHA256: ae21ed3d7f066d53c3e931e42f04556ee522560aa32558641d7ffad0fd33bad6
+SHA512: 212592b09398f7c649bd748d65045d35ceea1aff01fb9648330dc9e7bc66d011bdd41455d152393196065ce43cf4c262621acafd1fc78ee36da1ea23b046439b
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
 
 Package: jts-hostname
+Architecture: all
+Version: 3
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 3
 Filename: deb/jts-hostname_3_all.deb
 Size: 1088
 MD5sum: d0881705bc30c53587fa981363086a77
@@ -34,341 +118,12 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
-Package: jts-teacher
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 5
-Depends: jts-base, jts-video-playback
-Conflicts: jts-student
-Filename: deb/jts-teacher_5_all.deb
-Size: 832
-MD5sum: 6731d36d96192c84a51e8e9a825d9e36
-SHA1: b4e94460b3b0f5be60f2ba38951cbedad82967ad
-SHA256: 69dbfa4816090110ff8edb629cd4aa504b16df5d73c86cf63da428f3018dd380
-SHA512: 5a81d1357a1be016185a1221e9bdae06fd0e72626c77094a3e13311ca85c4443152e2cc651378c02c822617ab59b66b1f7400abc671d68e61294fc140979b3b2
-Description: JTS teacher package
- Mark system as a teacher system
- Bring teacher tools
-
-Package: rear
-Priority: optional
-Section: misc
-Installed-Size: 2937
-Maintainer: Dag Wieers <dag@wieers.com>
-Architecture: all
-Version: 1.17.2
-Provides: rear
-Depends: syslinux, ethtool, lsb-release, portmap, genisoimage, iproute, iputils-ping, binutils, parted, openssl, gawk, attr
-Recommends: nfs-client
-Filename: deb/rear_1.17.2_all.deb
-Size: 254030
-MD5sum: 78bbf13d3b0bbfe20118f835a2e5c921
-SHA1: d0df6a4b861bc4c34c3e819ebead5242de78b085
-SHA256: fa28d9966d217898cf4760f42e13a66670a883fe75d11e2ad6ad82cb462869d6
-SHA512: 9b6dc9f8de90fb75eaffc1b29b0e6649da23fefdab0c2a85cbcce05e6f21c553db1fe1aead4f5e82e3fccde7f2fc5bb085d84640c2b52bc0b277505ffebd6efc
-Description: Relax and Recover is a bare metal disaster recovery and system
- migration framework. See http://relax-and-recover.org/ for all the details.
- We are still looking for a Debian package maintainer who would write better
- packages. Please contact us to volunteer for maintaining Relax-and-Recover
- in Debian and Ubuntu.
-Homepage: http://relax-and-recover.org/
-
-Package: jts-base
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 13
-Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
-Filename: deb/jts-base_13_all.deb
-Size: 999906
-MD5sum: 6b5bf58678164c9a35842a020b17cb7f
-SHA1: bd895ab10500f7350b50702cce564773fd920ffd
-SHA256: 326fbb5a7270a6e3a5e5acee2345d5bf43dc432255707cecd4ca9da712bc76db
-SHA512: 4ec233de26bc719b11086c8573c2504faece0e61847720b5822933aeb2b4a0ba1e6030fa1359323cb95969975350892e745fa7b8a0be1b10f44368f826045d13
-Description: JTS Base Package
- Background image for login screen
- Common software dependencies
- Common GUI configuration
-
-Package: jts-serf
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 9
-Depends: curl
-Filename: deb/jts-serf_9_all.deb
-Size: 6633944
-MD5sum: 40564bddd64c02186dc998167e9f5fc9
-SHA1: 18398ee51b7afa5fa6bed32d8d5fe3c87cbed490
-SHA256: 73512172371ddd5574be032b4abb568bc56f271743c21f5b14fcce562cc4cae4
-SHA512: 689d1d6f0423505845cc64fad2c7884e86d03305da39b725017cb42a516ba6b191eeea4e45a4fc03209d6da5009fa923e4c128e8fefdf8b57798ae054de2f01f
-Description: JTS Klassenfernsteuerung mit serf
- serf for amd64, i386 and arm
- scripts
-
-Package: jts-libreoffice
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 1
-Depends: libreoffice-common
-Filename: deb/jts-libreoffice_1_all.deb
-Size: 11250
-MD5sum: 1dacd6612663c07b8b6d8a96df4e0577
-SHA1: e8a37e55afced206a339790f05e89552fabe05eb
-SHA256: 4885e683786c912d0066332be6130a7897207ef3dbc61e9acc10b8bfa138c34d
-SHA512: 34ac22e73a26403bf7330a6f8db4d6f3e43270b5ef94624b0d9d8e2dc370273601a29ef16c3a0a24bfab125121c627f021529d641f1d9bd3246c0417507c0fd8
-Description: JTS libreoffice environment
- Libreoffice default configuration
-
-Package: jts-base
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 14
-Depends: jts-repo, jts-guest-customization, jts-fonts, jts-serf, jts-video-playback, jts-libreoffice, inkscape, scribus-doc, scribus, google-chrome-stable | chromium-browser, squid-deb-proxy-client
-Filename: deb/jts-base_14_all.deb
-Size: 999924
-MD5sum: 9ed35ee72c43445de4b6b55947c1697d
-SHA1: e5834ad75ddea7c1b62a34610041c01728f5a244
-SHA256: 757ca52f385c7405f74c3089c26680894fd99306d99c54ab2ecd2896c3aeef63
-SHA512: f2879aab4b1eba171273ee65af3a4e74e967f4fa5f58a2946f0809743c79b4a6e2c604d8afe78af14727e99145af5485f090050064890f13f72f9fa4e103d7a4
-Description: JTS Base Package
- Background image for login screen
- Common software dependencies
- Common GUI configuration
-
-Package: libdvdcss2
-Priority: optional
-Section: libs
-Installed-Size: 85
-Maintainer: Christian Marillat <marillat@deb-multimedia.org>
-Architecture: i386
-Source: libdvdcss
-Version: 1.4.0-dmo1
-Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
-Provides: libdvdcss
-Depends: libc6 (>= 2.7)
-Filename: deb/libdvdcss2_1.4.0-dmo1_i386.deb
-Size: 57118
-MD5sum: f0b9bb186aebbec92865c00fd1d91431
-SHA1: b72e2bcbfb117947199a740e67c8380f07e5518d
-SHA256: 3fc315fa21278ec24e5a899f031b2be54cf1af2d2d5fdcda5c43afe3b0a0cf8f
-SHA512: 1e4a76489194569c5c08f10d56bba2517907b4981e3e7b9a6011f46eb48031b9207d97707666109222a0f678cbd142a090d7decb203f332415fe6258ca6df84b
-Description: Simple foundation for reading DVDs - runtime libraries
- To allow applications to access some of the more advanced features
- of the DVD format.
-Bugs: marillat@deb-multimedia.org
-Multi-Arch: same
-Homepage: http://download.videolan.org/
-
-Package: libdvdcss2
-Priority: optional
-Section: libs
-Installed-Size: 86
-Maintainer: Christian Marillat <marillat@deb-multimedia.org>
-Architecture: amd64
-Source: libdvdcss
-Version: 1.4.0-dmo1
-Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
-Provides: libdvdcss
-Depends: libc6 (>= 2.7)
-Filename: deb/libdvdcss2_1.4.0-dmo1_amd64.deb
-Size: 55804
-MD5sum: b848513c1dd4d99d747df58bfddfdbab
-SHA1: 2425637fc8ae4ff53492dac5297bf5d9c501073a
-SHA256: e1906de8b387d4b2f6c8e33659809c65557a3bb387fd2655abcb5f758da363c2
-SHA512: e05e4cfee5ca8a913b9bbda25ddef026f5a846f026e7c49f2f2330c7e0f98567b3e29862a0701698d26428c37e8f7360e0d1843cbbb80d1189d4d581e7f5afe2
-Description: Simple foundation for reading DVDs - runtime libraries
- To allow applications to access some of the more advanced features
- of the DVD format.
-Bugs: marillat@deb-multimedia.org
-Multi-Arch: same
-Homepage: http://download.videolan.org/
-
-Package: jts-video-playback
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 2
-Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
-Filename: deb/jts-video-playback_2_amd64.deb
-Size: 754
-MD5sum: e09ca09c0fbfc614ce92086b38352328
-SHA1: 92efa245ef8f457b6d69137115dcc3aebe1911b0
-SHA256: ab95383a4675ce868558ed034171f7d51088c7863f764278095f84cc81a4427c
-SHA512: 6aac9401621909c2c9f965977d8a605646e954ed048f32ebdae90588ebe80dbbbc2ce7d940a42e33f8b4cf674a339778afd4339cb2f55414b765296af7d0e0b4
-Description: JTS video
- Everything needed to play back videos of all kinds
- .
- metapackage
-
-Package: jts-video-playback
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 3
-Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
-Filename: deb/jts-video-playback_3_all.deb
-Size: 752
-MD5sum: 18752866b1bb8df6b777db60d3a528db
-SHA1: 567bd27104f8cf4351249ae125c557d1337ba44f
-SHA256: a3230030b6339d03805a2bdb2b87b226aef2ee76074dcabd4e61580af2d051c5
-SHA512: 33255b1049a97e21f0685fa7ceb74db8fca2b0a5fddc9f35b6ef156ce720982000aef035b9c4371a6bfee6dfea47d9e220564ff3e406777340be86be4473fcab
-Description: JTS video
- Everything needed to play back videos of all kinds
- .
- metapackage
-
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 7
-Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
-Filename: deb/jts-virtualbox-guest_7_all.deb
-Size: 806
-MD5sum: 0157e3ef13e92896c55a785b8c8405d6
-SHA1: 004b4df6588b579940f6125bc4e600adb89f928c
-SHA256: 85e394a4af064143aeb6d62fa464035c2e7bb8e50930a8ec058dedb38485ea5e
-SHA512: c7ab228d4b3ca3511cfab5c36a67b9bb9b9ae61b650c977ff8829babe621e6d23c9145aff7546a89b49125f22b62a03f53c175ed3216a4c1d8b961decaa6deec
-Description: JTS support beeing a virtualbox guest
- Give shared folder permissions to edv
- .
- metapackage
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 14
-Filename: deb/jts-guest-customization_14_all.deb
-Size: 150116
-MD5sum: f9666585f22c77d2822624bb5b7cc05f
-SHA1: 7e52d8c56c79f4c52e71082806b03fd21700fab2
-SHA256: 5a106fb07f7c0f58816f297bd5d212dcd7b1241384619f2e78886cac6528e876
-SHA512: 3a6f92f77597929f61ec16c5679eb6a6841640f11dea119e9c50d7160138402c85858fa779f1ed5227fe391fd72b9754f74ee0c8d25ba6080047ada52b00965f
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
-
-Package: jts-fonts
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 2
-Depends: ttf-mscorefonts-installer, fonts-sil-ezra, ttf-liberation, fonts-sil-gentiumplus
-Filename: deb/jts-fonts_2_all.deb
-Size: 2900192
-MD5sum: 31741077d4dcbb7d8e4ec18d63323c53
-SHA1: 9eb3fd718f3311826bab9b227278137f3cb7d954
-SHA256: cef7e66cdf8f8a7116e98a540c4c9b5d89eeea390878d7b54fd3713f01ab96c7
-SHA512: 0c277fe4e502baeda08974342d1769528a515a9d4b31260943996d6b5aff977eed33049c92f55b21f9abb7816e06c7e38e918369e22b6b03299a68a5f35f451a
-Description: TTF Collection
- Opensiddur
- Libertine
-
-Package: jts-repo
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 2
-Filename: deb/jts-repo_2_all.deb
-Size: 18410
-MD5sum: 1fc34db95faafbd96a41ba64aafffefe
-SHA1: bba14090368595fbd770b4b96e6a1ba96702c743
-SHA256: 45d7e298b67d7ee046ece5940b4633c3f471e7bc1288a75b2d200f11d17bc57a
-SHA512: 01be5df133531f036c1067603c8243fefcb26d2e5e40dfa520ffc5bd69b88ddd4c459fecc9fdee8361641a721621f6e1ad03cd4752d140f5fe5fba0b60371935
-Description: JTS Repository
- Configuration and GPG keys
-
-Package: jts-virtualbox-guest
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 8
-Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x11
-Filename: deb/jts-virtualbox-guest_8_all.deb
-Size: 810
-MD5sum: 15654ad1589525d5dd78ebfbe4f156ce
-SHA1: 482aca6a9bbe59c26ba7472a668c0a36fcf09ee4
-SHA256: e90c1f66cf169bd652dd22969ea87b45af48f227b3befbc8bfb64d7ab00ec98a
-SHA512: 9d9f4a08e8d248cd21f47d92c5f8ca185025628c8710bf5ee0c7f53162e5ed2c7575de235c67812a26a335f1ffd2caea640b932c827ea47180982f6ee2253686
-Description: JTS support beeing a virtualbox guest
- Give shared folder permissions to edv
- .
- metapackage
-
-Package: jts-teacher
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 4
-Depends: jts-base
-Conflicts: jts-student
-Filename: deb/jts-teacher_4_all.deb
-Size: 816
-MD5sum: 85e8ecb201698c3e9e6067815d7d35e7
-SHA1: a293e5c610bf706f16d92b94820d996d21fdeac0
-SHA256: f43d7e0ed851dabfe60c8e4332992c1eb5f2e0cefe4fca91af84b4ec887d4433
-SHA512: 1d1e1cfde30e2bc158a63dc6c1f7779bc6f18a313b1766390ce616cb62179040255c3d625bbb00895b3b46f9779d56dca93a0f636915f5bfc31290f835864daf
-Description: JTS teacher package
- Mark system as a teacher system
- Bring teacher tools
-
-Package: jts-guest-customization
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 15
-Filename: deb/jts-guest-customization_15_all.deb
-Size: 150132
-MD5sum: e6c10b9655ef34ec381dccafe0312b7b
-SHA1: 002fcd4a3b58fecb10aa4f5bb9eee1f4996bab3d
-SHA256: 9d441636a45378bce6015006247899f6877ceb3dc4c0b075163557cc5307d6c8
-SHA512: 254a58192a530eb917b1cf5e260bc58d17cb330bb84367d24646fa6c825ce1c2748140b903bc7cab6398ac26d3461efe865b3ce97dce0d51bdad16da91d3563e
-Description: JTS Anpassungen für Gastnutzer
- Berechtigungen
- Voreinstellungen
-
-Package: jts-student
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: amd64
-Version: 4
-Depends: jts-base, jts-guest-customization
-Conflicts: jts-teacher
-Filename: deb/jts-student_4_amd64.deb
-Size: 910
-MD5sum: 9d8acdfb346390218fe7f54f7337d8f7
-SHA1: 5c331d9c75d10d8cb9f4039dc91404d1e206c2b5
-SHA256: 975749d6b07683a56a8077142fd136852469e8de789f1ca5a0e97f981574106c
-SHA512: e29e604854b2b91f216515a780a5778d8f73c027e6a65dbcfcf181164de492c30d4bd8bc6d846dbc0743ecc9071b7cd54e13d78c8d05894e3091949e1846003c
-Description: JTS student package
- Mark system as a student system
-
 Package: jts-hostname
+Architecture: all
+Version: 4
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 4
 Filename: deb/jts-hostname_4_all.deb
 Size: 1088
 MD5sum: d29afc7e32bd3434a905f25a9202e3ec
@@ -382,29 +137,28 @@ Description: JTS automatic hostname configuration
  .
  empty package
 
-Package: jts-student
+Package: jts-libreoffice
+Architecture: all
+Version: 1
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 5
-Depends: jts-base, jts-guest-customization
-Conflicts: jts-teacher
-Filename: deb/jts-student_5_all.deb
-Size: 904
-MD5sum: 268b0b0bf8f7d6545fb78148daab3239
-SHA1: 365014d85947c96660fc05d55b4e02cbf7851068
-SHA256: d0314bf9a6c175223793a115803a23bd611c16adcd4e8268dc0b9aed1bcfb583
-SHA512: d9a628e6f17bef36c85ccaffef87708d1bc5fc2eefa7046900e24a907bea71ce6783b1b918c036a83ecd6c6386822141e674866a45473832d0baf487a5319d03
-Description: JTS student package
- Mark system as a student system
+Depends: libreoffice-common
+Filename: deb/jts-libreoffice_1_all.deb
+Size: 11250
+MD5sum: 1dacd6612663c07b8b6d8a96df4e0577
+SHA1: e8a37e55afced206a339790f05e89552fabe05eb
+SHA256: 4885e683786c912d0066332be6130a7897207ef3dbc61e9acc10b8bfa138c34d
+SHA512: 34ac22e73a26403bf7330a6f8db4d6f3e43270b5ef94624b0d9d8e2dc370273601a29ef16c3a0a24bfab125121c627f021529d641f1d9bd3246c0417507c0fd8
+Description: JTS libreoffice environment
+ Libreoffice default configuration
 
 Package: jts-libreoffice
+Architecture: all
+Version: 2
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 2
 Depends: libreoffice-common
 Filename: deb/jts-libreoffice_2_all.deb
 Size: 11242
@@ -416,11 +170,11 @@ Description: JTS libreoffice environment
  Libreoffice default configuration
 
 Package: jts-repo
+Architecture: all
+Version: 1
 Priority: optional
 Section: misc
 Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Architecture: all
-Version: 1
 Filename: deb/jts-repo_1_all.deb
 Size: 18450
 MD5sum: a79a01e27b56705f5bf6387e171366c2
@@ -429,4 +183,266 @@ SHA256: 624e2b758c9af8737c431be42642cb12e08718678f7512072a505a566773e457
 SHA512: f1b3c702eafa9a59a256ee0e59157c1504952feefa7a2d55a2b5da117a836b9b34a2c66aa1939d9261f363d9de301f9d4c231d3d220e77d860a4f804a6d5e496
 Description: JTS Repository
  Configuration and GPG keys
+
+Package: jts-repo
+Architecture: all
+Version: 2
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-repo_2_all.deb
+Size: 18410
+MD5sum: 1fc34db95faafbd96a41ba64aafffefe
+SHA1: bba14090368595fbd770b4b96e6a1ba96702c743
+SHA256: 45d7e298b67d7ee046ece5940b4633c3f471e7bc1288a75b2d200f11d17bc57a
+SHA512: 01be5df133531f036c1067603c8243fefcb26d2e5e40dfa520ffc5bd69b88ddd4c459fecc9fdee8361641a721621f6e1ad03cd4752d140f5fe5fba0b60371935
+Description: JTS Repository
+ Configuration and GPG keys
+
+Package: jts-serf
+Architecture: all
+Version: 8
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: curl
+Filename: deb/jts-serf_8_all.deb
+Size: 6636034
+MD5sum: 1f2b4ac60dfdfeae6bfa6fce2d154ae2
+SHA1: c0de34cb6116262a48e9a07a4727d6742bdc3a07
+SHA256: b4d3c9bb46e026396d179e77813a67e19690ce188d2f646cfdaade9d306bc412
+SHA512: 8ee1d64020e9d0078d1bbf50410b7535a665100bc27d2952b4d716e6957e56d00732f929914a5197836f4dac20123b0f929ffe1b107eb2c9e05bdd94e68159e6
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
+
+Package: jts-serf
+Architecture: all
+Version: 9
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: curl
+Filename: deb/jts-serf_9_all.deb
+Size: 6633944
+MD5sum: 40564bddd64c02186dc998167e9f5fc9
+SHA1: 18398ee51b7afa5fa6bed32d8d5fe3c87cbed490
+SHA256: 73512172371ddd5574be032b4abb568bc56f271743c21f5b14fcce562cc4cae4
+SHA512: 689d1d6f0423505845cc64fad2c7884e86d03305da39b725017cb42a516ba6b191eeea4e45a4fc03209d6da5009fa923e4c128e8fefdf8b57798ae054de2f01f
+Description: JTS Klassenfernsteuerung mit serf
+ serf for amd64, i386 and arm
+ scripts
+
+Package: jts-student
+Architecture: amd64
+Version: 4
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_4_amd64.deb
+Size: 910
+MD5sum: 9d8acdfb346390218fe7f54f7337d8f7
+SHA1: 5c331d9c75d10d8cb9f4039dc91404d1e206c2b5
+SHA256: 975749d6b07683a56a8077142fd136852469e8de789f1ca5a0e97f981574106c
+SHA512: e29e604854b2b91f216515a780a5778d8f73c027e6a65dbcfcf181164de492c30d4bd8bc6d846dbc0743ecc9071b7cd54e13d78c8d05894e3091949e1846003c
+Description: JTS student package
+ Mark system as a student system
+
+Package: jts-student
+Architecture: all
+Version: 5
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-base, jts-guest-customization
+Conflicts: jts-teacher
+Filename: deb/jts-student_5_all.deb
+Size: 904
+MD5sum: 268b0b0bf8f7d6545fb78148daab3239
+SHA1: 365014d85947c96660fc05d55b4e02cbf7851068
+SHA256: d0314bf9a6c175223793a115803a23bd611c16adcd4e8268dc0b9aed1bcfb583
+SHA512: d9a628e6f17bef36c85ccaffef87708d1bc5fc2eefa7046900e24a907bea71ce6783b1b918c036a83ecd6c6386822141e674866a45473832d0baf487a5319d03
+Description: JTS student package
+ Mark system as a student system
+
+Package: jts-teacher
+Architecture: all
+Version: 4
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-base
+Conflicts: jts-student
+Filename: deb/jts-teacher_4_all.deb
+Size: 816
+MD5sum: 85e8ecb201698c3e9e6067815d7d35e7
+SHA1: a293e5c610bf706f16d92b94820d996d21fdeac0
+SHA256: f43d7e0ed851dabfe60c8e4332992c1eb5f2e0cefe4fca91af84b4ec887d4433
+SHA512: 1d1e1cfde30e2bc158a63dc6c1f7779bc6f18a313b1766390ce616cb62179040255c3d625bbb00895b3b46f9779d56dca93a0f636915f5bfc31290f835864daf
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
+
+Package: jts-teacher
+Architecture: all
+Version: 5
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: jts-base, jts-video-playback
+Conflicts: jts-student
+Filename: deb/jts-teacher_5_all.deb
+Size: 832
+MD5sum: 6731d36d96192c84a51e8e9a825d9e36
+SHA1: b4e94460b3b0f5be60f2ba38951cbedad82967ad
+SHA256: 69dbfa4816090110ff8edb629cd4aa504b16df5d73c86cf63da428f3018dd380
+SHA512: 5a81d1357a1be016185a1221e9bdae06fd0e72626c77094a3e13311ca85c4443152e2cc651378c02c822617ab59b66b1f7400abc671d68e61294fc140979b3b2
+Description: JTS teacher package
+ Mark system as a teacher system
+ Bring teacher tools
+
+Package: jts-video-playback
+Architecture: amd64
+Version: 2
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Filename: deb/jts-video-playback_2_amd64.deb
+Size: 754
+MD5sum: e09ca09c0fbfc614ce92086b38352328
+SHA1: 92efa245ef8f457b6d69137115dcc3aebe1911b0
+SHA256: ab95383a4675ce868558ed034171f7d51088c7863f764278095f84cc81a4427c
+SHA512: 6aac9401621909c2c9f965977d8a605646e954ed048f32ebdae90588ebe80dbbbc2ce7d940a42e33f8b4cf674a339778afd4339cb2f55414b765296af7d0e0b4
+Description: JTS video
+ Everything needed to play back videos of all kinds
+ .
+ metapackage
+
+Package: jts-video-playback
+Architecture: all
+Version: 3
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: libdvdcss2, vlc, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly
+Filename: deb/jts-video-playback_3_all.deb
+Size: 752
+MD5sum: 18752866b1bb8df6b777db60d3a528db
+SHA1: 567bd27104f8cf4351249ae125c557d1337ba44f
+SHA256: a3230030b6339d03805a2bdb2b87b226aef2ee76074dcabd4e61580af2d051c5
+SHA512: 33255b1049a97e21f0685fa7ceb74db8fca2b0a5fddc9f35b6ef156ce720982000aef035b9c4371a6bfee6dfea47d9e220564ff3e406777340be86be4473fcab
+Description: JTS video
+ Everything needed to play back videos of all kinds
+ .
+ metapackage
+
+Package: jts-virtualbox-guest
+Architecture: all
+Version: 7
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x1
+Filename: deb/jts-virtualbox-guest_7_all.deb
+Size: 806
+MD5sum: 0157e3ef13e92896c55a785b8c8405d6
+SHA1: 004b4df6588b579940f6125bc4e600adb89f928c
+SHA256: 85e394a4af064143aeb6d62fa464035c2e7bb8e50930a8ec058dedb38485ea5e
+SHA512: c7ab228d4b3ca3511cfab5c36a67b9bb9b9ae61b650c977ff8829babe621e6d23c9145aff7546a89b49125f22b62a03f53c175ed3216a4c1d8b961decaa6deec
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+
+Package: jts-virtualbox-guest
+Architecture: all
+Version: 8
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Depends: adduser, virtualbox-guest-utils, virtualbox-guest-x11
+Filename: deb/jts-virtualbox-guest_8_all.deb
+Size: 810
+MD5sum: 15654ad1589525d5dd78ebfbe4f156ce
+SHA1: 482aca6a9bbe59c26ba7472a668c0a36fcf09ee4
+SHA256: e90c1f66cf169bd652dd22969ea87b45af48f227b3befbc8bfb64d7ab00ec98a
+SHA512: 9d9f4a08e8d248cd21f47d92c5f8ca185025628c8710bf5ee0c7f53162e5ed2c7575de235c67812a26a335f1ffd2caea640b932c827ea47180982f6ee2253686
+Description: JTS support beeing a virtualbox guest
+ Give shared folder permissions to edv
+ .
+ metapackage
+
+Package: libdvdcss2
+Architecture: amd64
+Version: 1.4.0-dmo1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdvdcss
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: marillat@deb-multimedia.org
+Installed-Size: 86
+Provides: libdvdcss
+Depends: libc6 (>= 2.7)
+Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
+Filename: deb/libdvdcss2_1.4.0-dmo1_amd64.deb
+Size: 55804
+MD5sum: b848513c1dd4d99d747df58bfddfdbab
+SHA1: 2425637fc8ae4ff53492dac5297bf5d9c501073a
+SHA256: e1906de8b387d4b2f6c8e33659809c65557a3bb387fd2655abcb5f758da363c2
+SHA512: e05e4cfee5ca8a913b9bbda25ddef026f5a846f026e7c49f2f2330c7e0f98567b3e29862a0701698d26428c37e8f7360e0d1843cbbb80d1189d4d581e7f5afe2
+Homepage: http://download.videolan.org/
+Description: Simple foundation for reading DVDs - runtime libraries
+ To allow applications to access some of the more advanced features
+ of the DVD format.
+
+Package: libdvdcss2
+Architecture: i386
+Version: 1.4.0-dmo1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdvdcss
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: marillat@deb-multimedia.org
+Installed-Size: 85
+Provides: libdvdcss
+Depends: libc6 (>= 2.7)
+Replaces: libdvdcss-dev (<= 0.0.3-3), libdvdcss0 (<= 1.0.0-0.0), libdvdcss2-dev (<= 1.2.10-0.0)
+Filename: deb/libdvdcss2_1.4.0-dmo1_i386.deb
+Size: 57118
+MD5sum: f0b9bb186aebbec92865c00fd1d91431
+SHA1: b72e2bcbfb117947199a740e67c8380f07e5518d
+SHA256: 3fc315fa21278ec24e5a899f031b2be54cf1af2d2d5fdcda5c43afe3b0a0cf8f
+SHA512: 1e4a76489194569c5c08f10d56bba2517907b4981e3e7b9a6011f46eb48031b9207d97707666109222a0f678cbd142a090d7decb203f332415fe6258ca6df84b
+Homepage: http://download.videolan.org/
+Description: Simple foundation for reading DVDs - runtime libraries
+ To allow applications to access some of the more advanced features
+ of the DVD format.
+
+Package: rear
+Architecture: all
+Version: 1.17.2
+Priority: optional
+Section: misc
+Maintainer: Dag Wieers <dag@wieers.com>
+Installed-Size: 2937
+Provides: rear
+Depends: syslinux, ethtool, lsb-release, portmap, genisoimage, iproute, iputils-ping, binutils, parted, openssl, gawk, attr
+Recommends: nfs-client
+Filename: deb/rear_1.17.2_all.deb
+Size: 254030
+MD5sum: 78bbf13d3b0bbfe20118f835a2e5c921
+SHA1: d0df6a4b861bc4c34c3e819ebead5242de78b085
+SHA256: fa28d9966d217898cf4760f42e13a66670a883fe75d11e2ad6ad82cb462869d6
+SHA512: 9b6dc9f8de90fb75eaffc1b29b0e6649da23fefdab0c2a85cbcce05e6f21c553db1fe1aead4f5e82e3fccde7f2fc5bb085d84640c2b52bc0b277505ffebd6efc
+Homepage: http://relax-and-recover.org/
+Description: Relax and Recover is a bare metal disaster recovery and system
+ migration framework. See http://relax-and-recover.org/ for all the details.
+ We are still looking for a Debian package maintainer who would write better
+ packages. Please contact us to volunteer for maintaining Relax-and-Recover
+ in Debian and Ubuntu.
 

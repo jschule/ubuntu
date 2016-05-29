@@ -80,7 +80,7 @@ apt-ftparchive -c config_for_release release . | grep -v " Release" >Release
 gpg --verbose --clearsign --output InRelease --batch --yes Release
 gpg --verbose --output Release.gpg --batch --yes -ba Release
 
-if [ -x .post.sh ] ; then
-    exec .post.sh
+if [ -x ./.post.sh ] ; then
+    exec ./.post.sh
 fi
 # vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4

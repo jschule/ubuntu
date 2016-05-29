@@ -133,21 +133,6 @@ SHA512: 40a66fb87a99ddf9cc9a105142076c5e0aec93b2a4af69fabad758c35393c5f9c4cdf238
 Description: JTS libreoffice environment
  Libreoffice default configuration
 
-Package: jts-repo
-Architecture: all
-Version: 1
-Priority: optional
-Section: misc
-Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
-Filename: deb/jts-repo_1_all.deb
-Size: 18450
-MD5sum: a79a01e27b56705f5bf6387e171366c2
-SHA1: 7bd361fa42917bbad55e9867fc273030a478ebe2
-SHA256: 624e2b758c9af8737c431be42642cb12e08718678f7512072a505a566773e457
-SHA512: f1b3c702eafa9a59a256ee0e59157c1504952feefa7a2d55a2b5da117a836b9b34a2c66aa1939d9261f363d9de301f9d4c231d3d220e77d860a4f804a6d5e496
-Description: JTS Repository
- Configuration and GPG keys
-
 Package: jts-base
 Architecture: all
 Version: 14
@@ -424,6 +409,21 @@ Description: JTS support beeing a virtualbox guest
  Give shared folder permissions to edv
  .
  metapackage
+
+Package: jts-repo
+Architecture: all
+Version: 4
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-repo_4_all.deb
+Size: 20824
+MD5sum: 6b589ca5bdb5105fbf88fa76a682491d
+SHA1: f14d6b1b5ec93e0a7bdb0cae6fa84d8844251c70
+SHA256: edc1a4566488a2d8f78a62bab490fefd9e385c78c503427187ca740872f9f6fb
+SHA512: 074fe5119efec3de98fa45da4694dec8c092806b80bc120cd643475ae395625cfb3ce469460193d7c4a123245b466c68d21ee0d232742ca78a69fb53fb4120a8
+Description: JTS Repository
+ Configuration and GPG keys
 
 Package: libdvdcss2
 Architecture: amd64

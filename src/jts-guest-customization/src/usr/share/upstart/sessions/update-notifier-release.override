@@ -1,0 +1,4 @@
+# disable for guest users
+pre-start script
+	expr match $USER '^guest-.*' && stop
+end script

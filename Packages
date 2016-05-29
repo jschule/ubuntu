@@ -13,6 +13,22 @@ SHA512: 01be5df133531f036c1067603c8243fefcb26d2e5e40dfa520ffc5bd69b88ddd4c459fec
 Description: JTS Repository
  Configuration and GPG keys
 
+Package: jts-guest-customization
+Architecture: all
+Version: 16
+Priority: optional
+Section: misc
+Maintainer: Schlomo Schapiro <schlomo+packaging@schapiro.org>
+Filename: deb/jts-guest-customization_16_all.deb
+Size: 159332
+MD5sum: 1847171ea3ace553d638ed706dd4fb17
+SHA1: 299ad7a10925be3173a10af3b27cb99eb5b0edff
+SHA256: ae21ed3d7f066d53c3e931e42f04556ee522560aa32558641d7ffad0fd33bad6
+SHA512: 212592b09398f7c649bd748d65045d35ceea1aff01fb9648330dc9e7bc66d011bdd41455d152393196065ce43cf4c262621acafd1fc78ee36da1ea23b046439b
+Description: JTS Anpassungen für Gastnutzer
+ Berechtigungen
+ Voreinstellungen
+
 Package: jts-student
 Architecture: all
 Version: 5

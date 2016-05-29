@@ -1,0 +1,2 @@
+jts-repo: package-installs-apt-sources etc/apt/sources.list.d/
+jts-repo: package-installs-apt-sources etc/apt/sources.list.d/jschule.list

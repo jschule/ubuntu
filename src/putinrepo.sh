@@ -5,16 +5,17 @@
 # Written by Schlomo Schapiro
 # Licensed under the GNU General Public License, see http://www.gnu.org/licenses/gpl.html for full text
 set -e -E -u
+ME_DIR="$(dirname "$(readlink -f "$0")")"
+CHECK_FOR_REPO=( "$ME_DIR" "$ME_DIR"/.. "$ME_DIR"/repo "$ME_DIR"/../repo "$ME_DIR"/../.. )
 if [[ ! "${REPO_BASE_DIR:-}" ]] ; then
-    ME_DIR="$(dirname "$(readlink -f "$0")")"
-    for CHECK_DIR in "$ME_DIR" "$ME_DIR"/.. "$ME_DIR"/../.. ; do
+    for CHECK_DIR in "${CHECK_FOR_REPO[@]}" ; do
         if [[ -r "$CHECK_DIR"/config_for_release ]] ; then
             export REPO_BASE_DIR="$(readlink -f "$CHECK_DIR")"
             break
         fi
     done
     if [[ ! "${REPO_BASE_DIR:-}" ]] ; then
-        echo "Could not guess your repo path ($ME_DIR $ME_DIR/.. $ME_DIR/../.. ), please set REPO_BASE_DIR"
+        echo "Could not guess your repo path ("${CHECK_FOR_REPO[@]}"), please set REPO_BASE_DIR"
 	echo "The repo should contain a file named config_for_release with stuff like"
 	echo ' APT::FTPArchive::Release::Architectures "amd64 armhf armel i386";'
 	echo ' APT::FTPArchive::Release::Origin "Private";'
@@ -76,9 +77,10 @@ fi
 cd "$REPO_BASE_DIR"
 apt-ftparchive packages deb | tee Packages | bzip2 >Packages.bz2
 apt-ftparchive -c config_for_release release . | grep -v " Release" >Release
+gpg --verbose --clearsign --output InRelease --batch --yes Release
 gpg --verbose --output Release.gpg --batch --yes -ba Release
 
-git add -A Packages Packages.bz2 Release Release.gpg deb
-git commit -m "putinrepo"
-git push
+if [ -x .post.sh ] ; then
+    exec .post.sh
+fi
 # vim: tabstop=4 expandtab shiftwidth=4 softtabstop=4

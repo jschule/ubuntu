@@ -1,0 +1,5 @@
+#!ipxe
+sanboot --no-describe --drive 0x80 ||
+
+set dist eoan
+chain /stable.txt

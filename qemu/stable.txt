@@ -1,0 +1,10 @@
+#!ipxe
+
+isset ${dist} || set dist eoan
+
+# debian.charite.de
+isset ${mirror} || set mirror mirror.ipb.de
+
+kernel http://${mirror}/ubuntu/dists/${dist}/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/linux biosdevname=0 net.ifnames=0 ipv6.disable=1 auto-install/enable=true debconf/priority=critical locale=en_US console-setup/ask_detect=false console-setup/layoutcode=us vga=791 mirror/country=manual mirror/http/hostname=${mirror} mirror/http/directory=/ubuntu preseed/url=http://jschule.github.io/ubuntu/preseed/jts.txt
+initrd http://${mirror}/ubuntu/dists/${dist}/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/initrd.gz
+boot
